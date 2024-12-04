@@ -49,7 +49,7 @@ export default function Footer() {
                 target="_blank"
                 title="GitHub"
             >
-                <span className="max-md:hidden">@lukisrac</span>
+                <span className="max-md:hidden">@lukisracc</span>
                 <svg
                     fill="currentColor"
                     height="24"
