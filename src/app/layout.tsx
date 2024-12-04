@@ -41,13 +41,9 @@ export default async function RootLayout(props: Props) {
         <html className={`${firaCode.variable}`} lang={locale}>
             <NextIntlClientProvider messages={messages}>
                 <body className="h-screen min-h-screen p-4 md:p-16">
-                    <div className="border-primary bg-primary relative flex h-full flex-col rounded-lg border">
+                    <div className="border-primary bg-primary relative flex h-full flex-col overflow-hidden rounded-lg border">
                         <Header />
-                        <main className="grow md:grid md:grid-cols-[312px_1fr_312px]">
-                            <div />
-                            {props.children}
-                            <div />
-                        </main>
+                        {props.children}
                         <Footer />
                     </div>
                 </body>

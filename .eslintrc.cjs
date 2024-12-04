@@ -20,7 +20,6 @@ const config = {
         "no-console": "error",
         "react/react-in-jsx-scope": "off",
         "react/jsx-sort-props": ["error"],
-        "react/jsx-no-literals": "error",
         "prefer-template": ["error"],
         "check-file/filename-naming-convention": [
             "error",

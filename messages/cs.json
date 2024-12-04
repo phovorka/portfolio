@@ -4,9 +4,12 @@
         "logo": "lukas-rac",
         "navigation": {
             "home": "_ahoj",
-            "about": "_o-mmne",
+            "about": "_o-mne",
             "projects": "_projekty",
             "contact": "_kontaktuj-me"
+        },
+        "footer": {
+            "find-me-in": "najdete mě na"
         }
     }
 }

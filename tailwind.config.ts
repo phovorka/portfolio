@@ -1,5 +1,9 @@
 import type { Config } from "tailwindcss";
 
+const COLORS = {
+    "dark-slate-blue": "#1E2D3D",
+};
+
 export default {
     content: [
         "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,6 +20,7 @@ export default {
                 orange: "#FEA55F",
             },
             colors: {
+                ...COLORS,
                 background: "var(--background)",
                 foreground: "var(--foreground)",
             },

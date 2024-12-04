@@ -7,6 +7,9 @@
             "about": "_about-me",
             "projects": "_projects",
             "contact": "_contact-me"
+        },
+        "footer": {
+            "find-me-in": "find me in"
         }
     }
 }
