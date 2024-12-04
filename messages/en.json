@@ -1,0 +1,12 @@
+{
+    "HomePage": {
+        "title": "Lukáš Rác | Websites and Apps",
+        "logo": "lukas-rac",
+        "navigation": {
+            "home": "_hello",
+            "about": "_about-me",
+            "projects": "_projects",
+            "contact": "_contact-me"
+        }
+    }
+}
