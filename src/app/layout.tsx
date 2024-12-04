@@ -14,10 +14,14 @@ const firaCode = Fira_Code({
     variable: "--font-fira-code",
 });
 
-export async function generateMetadata(params: {
-    locale: string;
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-    const t = await getTranslations({ locale: params.locale });
+    const locale = (await params).locale;
+
+    const t = await getTranslations({ locale });
 
     return { title: t("HomePage.title") };
 }
