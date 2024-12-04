@@ -14,14 +14,14 @@ export function LanguageButton(props: LanguageButtonProps) {
     return (
         <button
             className={clsx(
-                "border-primary hover:bg-dark-slate-blue h-full border-l px-3.5",
+                "h-full border-l border-primary px-3.5 hover:bg-dark-slate-blue",
                 props.isActive ? "text-white" : "",
                 props.className,
             )}
             onClick={() => setUserLocale(props.locale)}
             title={props.locale === "en" ? "English" : "Čeština"}
         >
-            {props.locale === "en" ? "EN" : "CZ"}
+            {props.locale === "en" ? "en" : "cz"}
         </button>
     );
 }
