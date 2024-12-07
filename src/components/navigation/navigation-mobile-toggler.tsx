@@ -1,19 +1,26 @@
-"use client";
-
-import { useState } from "react";
+import { Dispatch, SetStateAction } from "react";
+import clsx from "clsx";
+import { LanguageSwitcher } from "../language-switcher/language-switcher";
 import { NavigationMobile } from "./navigation-mobile";
 
-export function NavigationMobileToggler() {
-    const [isNavigationOpen, setIsNavigationOpen] = useState(false);
+interface Props {
+    isNavigationOpen: boolean;
+    locale: string;
+    setIsNavigationOpen: Dispatch<SetStateAction<boolean>>;
+}
 
+export function NavigationMobileToggler(props: Props) {
     return (
         <>
             <button
-                className="size-6 md:hidden"
-                onClick={() => setIsNavigationOpen((prev) => !prev)}
+                className={clsx(
+                    "order-3 size-6 h-full lg:hidden",
+                    !props.isNavigationOpen && "max-lg:ml-auto",
+                )}
+                onClick={() => props.setIsNavigationOpen((prev) => !prev)}
                 type="button"
             >
-                {isNavigationOpen ? (
+                {props.isNavigationOpen ? (
                     <svg
                         fill="currentColor"
                         height="24"
@@ -33,7 +40,13 @@ export function NavigationMobileToggler() {
                     </svg>
                 )}
             </button>
-            <NavigationMobile isOpen={isNavigationOpen} />
+            {props.isNavigationOpen && (
+                <LanguageSwitcher
+                    className="ml-auto mr-[18px] lg:hidden"
+                    locale={props.locale}
+                />
+            )}
+            <NavigationMobile isOpen={props.isNavigationOpen} />
         </>
     );
 }

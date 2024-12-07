@@ -10,6 +10,12 @@
         },
         "footer": {
             "find-me-in": "najdete mě na"
+        },
+        "hero": {
+            "title": "Lukáš Rác",
+            "subtitle": "Ahoj. Jsem",
+            "position": "Frontend developer",
+            "github-comment": "koukněte na můj profil na GitHubu"
         }
     }
 }

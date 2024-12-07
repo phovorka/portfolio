@@ -1,31 +1,18 @@
-import { useTranslations } from "next-intl";
+import { useMenuItems } from "../header/hooks/use-menu-items";
 import { NavItem } from "./nav-item";
 import { NavLink } from "./nav-link";
 
 export function Navigation() {
-    const t = useTranslations();
+    const menuItems = useMenuItems();
 
     return (
-        <nav className="max-md:hidden">
+        <nav className="max-lg:hidden">
             <ul className="flex h-full">
-                <NavItem>
-                    <NavLink href="/">{t("HomePage.navigation.home")}</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="/about">
-                        {t("HomePage.navigation.about")}
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="/projects">
-                        {t("HomePage.navigation.projects")}
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink className="border-r" href="/contact">
-                        {t("HomePage.navigation.contact")}
-                    </NavLink>
-                </NavItem>
+                {menuItems.map((item) => (
+                    <NavItem key={item.label}>
+                        <NavLink href={item.href}>{item.label}</NavLink>
+                    </NavItem>
+                ))}
             </ul>
         </nav>
     );

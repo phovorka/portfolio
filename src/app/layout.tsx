@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import Footer from "@/components/footer/footer";
 import { Header } from "@/components/header/header";
+import { getUserLocale } from "@/services/locale";
 import "./globals.css";
 
 const firaCode = Fira_Code({
@@ -32,6 +33,7 @@ interface Props {
 
 export default async function RootLayout(props: Props) {
     const locale = await getLocale();
+    const userLocale = await getUserLocale();
 
     // Providing all messages to the client
     // side is the easiest way to get started
@@ -41,8 +43,8 @@ export default async function RootLayout(props: Props) {
         <html className={`${firaCode.variable}`} lang={locale}>
             <NextIntlClientProvider messages={messages}>
                 <body className="h-screen min-h-screen p-4 md:p-16">
-                    <div className="border-primary bg-primary relative flex h-full flex-col overflow-hidden rounded-lg border">
-                        <Header />
+                    <div className="relative flex h-full flex-col overflow-hidden rounded-lg border border-primary bg-primary">
+                        <Header locale={userLocale} />
                         {props.children}
                         <Footer />
                     </div>
