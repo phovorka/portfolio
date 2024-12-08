@@ -7,7 +7,7 @@ export function Navigation() {
 
     return (
         <nav className="max-lg:hidden">
-            <ul className="flex h-full">
+            <ul className="flex h-full" role="menubar">
                 {menuItems.map((item) => (
                     <NavItem key={item.label}>
                         <NavLink href={item.href}>{item.label}</NavLink>

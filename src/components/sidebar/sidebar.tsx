@@ -57,9 +57,12 @@ export function Sidebar() {
     return (
         <aside className="h-full w-[68px] border-r border-primary pt-4">
             <nav className="h-full">
-                <ul className="flex h-full flex-col items-center gap-8">
+                <ul
+                    className="flex h-full flex-col items-center gap-8"
+                    role="menubar"
+                >
                     {routes.map((route) => (
-                        <li key={route.path}>
+                        <li key={route.path} role="none">
                             <Link
                                 className={
                                     pathname === route.path
@@ -67,6 +70,7 @@ export function Sidebar() {
                                         : "opacity-40 hover:opacity-100"
                                 }
                                 href={route.path}
+                                role="menuitem"
                                 title={route.label}
                             >
                                 {route.icon}

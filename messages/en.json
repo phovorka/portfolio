@@ -17,5 +17,9 @@
             "position": "Frontend developer",
             "github-comment": "find my profile on GitHub"
         }
+    },
+    "AboutPage": {
+        "left-menu": {},
+        "empty-editor": "Open file from left menu to find out more."
     }
 }

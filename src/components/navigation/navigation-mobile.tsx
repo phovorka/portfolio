@@ -16,7 +16,7 @@ export function NavigationMobile(props: Props) {
     return (
         <div className="absolute inset-x-0 bottom-[--footer-height] top-[--header-height] z-10 bg-primary">
             <nav>
-                <ul>
+                <ul role="menubar">
                     {menuItems.map((item) => (
                         <NavItem key={item.label}>
                             <NavLinkMobile href={item.href}>

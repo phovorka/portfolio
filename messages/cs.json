@@ -17,5 +17,9 @@
             "position": "Frontend developer",
             "github-comment": "koukněte na můj profil na GitHubu"
         }
+    },
+    "AboutPage": {
+        "left-menu": {},
+        "empty-editor": "Otevřete soubor z levé nabídky a zjistěte více."
     }
 }

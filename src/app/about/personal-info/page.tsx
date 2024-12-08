@@ -1,3 +1,9 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function PersonalInfoPage() {
-    return <div>Personal info page</div>;
+    const t = useTranslations();
+
+    return <div>{t("AboutPage.empty-editor")}</div>;
 }

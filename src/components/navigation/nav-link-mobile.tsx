@@ -20,6 +20,7 @@ export function NavLinkMobile(props: ComponentProps<typeof Link>) {
                 className,
             )}
             href={href}
+            role="menuitem"
             {...restProps}
         />
     );
