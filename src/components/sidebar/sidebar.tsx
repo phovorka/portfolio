@@ -65,7 +65,8 @@ export function Sidebar() {
                         <li key={route.path} role="none">
                             <Link
                                 className={
-                                    pathname === route.path
+                                    pathname === route.path ||
+                                    pathname.startsWith(route.path)
                                         ? "opacity-100"
                                         : "opacity-40 hover:opacity-100"
                                 }

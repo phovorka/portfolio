@@ -11,7 +11,7 @@ export default function AboutPageLayout(props: Props) {
         <div className="flex grow">
             <Sidebar />
             <PageMenu />
-            <div>{props.children}</div>
+            <div className="grow">{props.children}</div>
         </div>
     );
 }

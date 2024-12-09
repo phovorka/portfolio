@@ -19,7 +19,25 @@
         }
     },
     "AboutPage": {
-        "left-menu": {},
+        "left-menu": {
+            "title": "personal-info",
+            "contacts": "contacts",
+            "folder": {
+                "bio": {
+                    "title": "bio",
+                    "files": {
+                        "me": "me"
+                    }
+                },
+                "education": {
+                    "title": "education",
+                    "files": {
+                        "high-school": "high-school",
+                        "university": "university"
+                    }
+                }
+            }
+        },
         "empty-editor": "Open file from left menu to find out more."
     }
 }

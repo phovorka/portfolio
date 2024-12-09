@@ -19,7 +19,25 @@
         }
     },
     "AboutPage": {
-        "left-menu": {},
+        "left-menu": {
+            "title": "osobni-info",
+            "contacts": "kontakty",
+            "folder": {
+                "bio": {
+                    "title": "bio",
+                    "files": {
+                        "me": "ja"
+                    }
+                },
+                "education": {
+                    "title": "vzdelani",
+                    "files": {
+                        "high-school": "stredni-skola",
+                        "university": "vysoka-skola"
+                    }
+                }
+            }
+        },
         "empty-editor": "Otevřete soubor z levé nabídky a zjistěte více."
     }
 }
