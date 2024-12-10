@@ -6,6 +6,7 @@ import { FolderType, MenuItem } from "./hooks/use-page-menu";
 
 interface Props {
     folder: FolderType;
+    folderArrowIconSize?: number;
     color: string;
     menuItems: MenuItem[];
 }
@@ -15,20 +16,20 @@ export function Folder(props: Props) {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    useEffect(() => {
-        setIsOpen(menuItems.some((item) => pathname.includes(item.href)));
-    }, []);
-
     const menuItems = props.menuItems.filter(
         (menuItem) => menuItem.folder === props.folder.folder,
     );
+
+    useEffect(() => {
+        setIsOpen(menuItems.some((item) => pathname.includes(item.href)));
+    }, [menuItems, pathname]);
 
     return (
         <details className="group/folder" open={isOpen}>
             <summary className="flex cursor-pointer list-none items-center gap-2 hover:text-white [&::-webkit-details-marker]:hidden">
                 <RiArrowRightSLine
                     className="group-open/folder:rotate-90"
-                    size={24}
+                    size={props.folderArrowIconSize ?? 24}
                 />
                 <RiFolder3Fill color={props.color} size={16} />
                 {props.folder.label}

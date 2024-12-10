@@ -1,4 +1,10 @@
 {
+    "Common": {
+        "error": {
+            "page-not-found": "Page not found",
+            "content-not-found": "No content"
+        }
+    },
     "HomePage": {
         "title": "Lukáš Rác | Websites and Apps",
         "logo": "lukas-rac",
@@ -20,22 +26,30 @@
     },
     "AboutPage": {
         "left-menu": {
-            "title": "personal-info",
-            "contacts": "contacts",
-            "folder": {
-                "bio": {
-                    "title": "bio",
-                    "files": {
-                        "me": "me"
-                    }
-                },
-                "education": {
-                    "title": "education",
-                    "files": {
-                        "high-school": "high-school",
-                        "university": "university"
+            "personal-info": {
+                "title": "personal-info",
+                "contacts": "contacts",
+                "folder": {
+                    "bio": {
+                        "title": "bio",
+                        "files": {
+                            "me": "me"
+                        }
+                    },
+                    "education": {
+                        "title": "education",
+                        "files": {
+                            "high-school": "high-school",
+                            "university": "university"
+                        }
                     }
                 }
+            },
+            "professional-info": {
+                "title": "professional-info"
+            },
+            "hobbies": {
+                "title": "hobbies"
             }
         },
         "empty-editor": "Open file from left menu to find out more."

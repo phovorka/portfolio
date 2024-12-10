@@ -11,7 +11,10 @@ export function useMenuItems(): NavLink[] {
 
     return [
         { href: "/", label: t("HomePage.navigation.home") },
-        { href: "/about/personal-info", label: t("HomePage.navigation.about") },
+        {
+            href: "/about/personal-info/me",
+            label: t("HomePage.navigation.about"),
+        },
         { href: "/projects", label: t("HomePage.navigation.projects") },
         { href: "/contact", label: t("HomePage.navigation.contact") },
     ];

@@ -9,7 +9,7 @@ export function NavLinkMobile(props: ComponentProps<typeof Link>) {
     const { className, href, ...restProps } = props;
 
     const pathname = usePathname();
-    const isActive = pathname === href;
+    const isActive = pathname === href || pathname.startsWith(`${href}/`);
 
     return (
         <Link

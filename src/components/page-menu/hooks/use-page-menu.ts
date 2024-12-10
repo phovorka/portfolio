@@ -29,36 +29,42 @@ export function usePageMenu(): MenuItems {
                 {
                     color: "#E99287",
                     folder: "bio",
-                    label: t("AboutPage.left-menu.folder.bio.title"),
+                    label: t(
+                        "AboutPage.left-menu.personal-info.folder.bio.title",
+                    ),
                 },
                 {
                     color: "#4D5BCE",
                     folder: "education",
-                    label: t("AboutPage.left-menu.folder.education.title"),
+                    label: t(
+                        "AboutPage.left-menu.personal-info.folder.education.title",
+                    ),
                 },
             ],
             menuItems: [
                 {
                     folder: "bio",
                     href: "/about/personal-info/me",
-                    label: t("AboutPage.left-menu.folder.bio.files.me"),
+                    label: t(
+                        "AboutPage.left-menu.personal-info.folder.bio.files.me",
+                    ),
                 },
                 {
                     folder: "education",
                     href: "/about/personal-info/high-school",
                     label: t(
-                        "AboutPage.left-menu.folder.education.files.high-school",
+                        "AboutPage.left-menu.personal-info.folder.education.files.high-school",
                     ),
                 },
                 {
                     folder: "education",
                     href: "/about/personal-info/university",
                     label: t(
-                        "AboutPage.left-menu.folder.education.files.university",
+                        "AboutPage.left-menu.personal-info.folder.education.files.university",
                     ),
                 },
             ],
-            title: t("AboutPage.left-menu.title"),
+            title: t("AboutPage.left-menu.personal-info.title"),
         },
         "/about/professional-info": {
             menuItems: [
@@ -72,7 +78,7 @@ export function usePageMenu(): MenuItems {
                 },
                 { label: "Skills", href: "/about/professional-info/skills" },
             ],
-            title: "professional-info",
+            title: t("AboutPage.left-menu.professional-info.title"),
         },
         "/about/hobbies": {
             menuItems: [
@@ -80,7 +86,7 @@ export function usePageMenu(): MenuItems {
                 { label: "Music", href: "/about/hobbies/music" },
                 { label: "Travel", href: "/about/hobbies/travel" },
             ],
-            title: "hobbies",
+            title: t("AboutPage.left-menu.hobbies.title"),
         },
     };
 }

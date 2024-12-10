@@ -3,17 +3,11 @@
 import { usePathname } from "next/navigation";
 import { RiMailFill, RiPhoneFill } from "@remixicon/react";
 import { useTranslations } from "next-intl";
+import { getBasePath } from "@/utils/get-base-path";
 import { Folder } from "./folder";
-import { MenuItems, usePageMenu } from "./hooks/use-page-menu";
+import { usePageMenu } from "./hooks/use-page-menu";
 
-function getBasePath(
-    menuItems: MenuItems,
-    pathname: string,
-): string | undefined {
-    return Object.keys(menuItems).find((key) => pathname.startsWith(key));
-}
-
-export function PageMenu() {
+export function DesktopPageMenu() {
     const t = useTranslations();
 
     const pathname = usePathname();
@@ -23,7 +17,7 @@ export function PageMenu() {
     const menu = basePath ? menuItems[basePath] : undefined;
 
     return (
-        <aside className="borderpr w-[244px] border-r border-primary">
+        <aside className="borderpr w-[244px] shrink-0 border-r border-primary max-md:hidden">
             <details className="group" open>
                 <summary className="h-10 cursor-pointer border-b border-primary px-3.5 leading-10 group-open:text-white">
                     {menu?.title}
@@ -45,7 +39,7 @@ export function PageMenu() {
             </details>
             <details className="group" open>
                 <summary className="h-10 cursor-pointer border-b border-primary pl-3.5 leading-10 group-open:text-white">
-                    {t("AboutPage.left-menu.contacts")}
+                    {t("AboutPage.left-menu.personal-info.contacts")}
                 </summary>
                 <div className="flex flex-col gap-3.5 px-3.5 pt-[18px]">
                     <a

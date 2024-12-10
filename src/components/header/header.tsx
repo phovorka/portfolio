@@ -16,7 +16,7 @@ export function Header(props: Props) {
     const [isNavigationOpen, setIsNavigationOpen] = useState(false);
 
     return (
-        <header className="flex h-[--header-height] border-b border-primary max-lg:px-[18px] lg:grid lg:grid-cols-[312px_1fr_auto]">
+        <header className="flex h-[--header-height] shrink-0 border-b border-primary max-lg:px-[18px] lg:grid lg:grid-cols-[minmax(auto,_312px)_auto_auto]">
             <div className="flex items-center border-primary lg:border-r lg:px-[22px]">
                 {t("HomePage.logo")}
             </div>
@@ -26,7 +26,10 @@ export function Header(props: Props) {
                 locale={props.locale}
                 setIsNavigationOpen={setIsNavigationOpen}
             />
-            <LanguageSwitcher className="max-lg:hidden" locale={props.locale} />
+            <LanguageSwitcher
+                className="ml-auto max-lg:hidden"
+                locale={props.locale}
+            />
         </header>
     );
 }

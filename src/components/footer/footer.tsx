@@ -4,7 +4,7 @@ export default function Footer() {
     const t = useTranslations();
 
     return (
-        <footer className="flex h-[--footer-height] border-t border-primary">
+        <footer className="flex h-[--footer-height] shrink-0 border-t border-primary">
             <div className="flex items-center border-r border-primary px-5 max-md:grow">
                 {t("HomePage.footer.find-me-in")}:
             </div>

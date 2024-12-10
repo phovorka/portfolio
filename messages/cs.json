@@ -1,4 +1,10 @@
 {
+    "Common": {
+        "error": {
+            "page-not-found": "Stránka nenalezena",
+            "content-not-found": "Žádný obsah"
+        }
+    },
     "HomePage": {
         "title": "Lukáš Rác | Webové stránky a aplikace",
         "logo": "lukas-rac",
@@ -20,22 +26,30 @@
     },
     "AboutPage": {
         "left-menu": {
-            "title": "osobni-info",
-            "contacts": "kontakty",
-            "folder": {
-                "bio": {
-                    "title": "bio",
-                    "files": {
-                        "me": "ja"
-                    }
-                },
-                "education": {
-                    "title": "vzdelani",
-                    "files": {
-                        "high-school": "stredni-skola",
-                        "university": "vysoka-skola"
+            "personal-info": {
+                "title": "osobni-info",
+                "contacts": "kontakty",
+                "folder": {
+                    "bio": {
+                        "title": "bio",
+                        "files": {
+                            "me": "ja"
+                        }
+                    },
+                    "education": {
+                        "title": "vzdelani",
+                        "files": {
+                            "high-school": "stredni-skola",
+                            "university": "vysoka-skola"
+                        }
                     }
                 }
+            },
+            "professional-info": {
+                "title": "profesni-info"
+            },
+            "hobbies": {
+                "title": "konicky"
             }
         },
         "empty-editor": "Otevřete soubor z levé nabídky a zjistěte více."
