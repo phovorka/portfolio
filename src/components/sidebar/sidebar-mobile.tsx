@@ -24,7 +24,7 @@ export function SidebarMobile(props: Props) {
                                 color={folder.color}
                                 folder={folder}
                                 key={folder.label}
-                                menuItems={item.menuItems}
+                                menuItems={item.menuItems ?? []}
                             />
                         ))}
                     </div>

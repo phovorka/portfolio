@@ -1,8 +1,11 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { CSSProperties, ReactNode, useEffect, useRef, useState } from "react";
+import clsx from "clsx";
 import { SubHeader } from "@/components/header/subheader";
 import { DesktopPageMenu } from "@/components/page-menu/page-menu";
+import { ProjectsFilter } from "@/components/projects-filter/projects-filter";
 import { SidebarDesktop } from "@/components/sidebar/sidebar";
 import { SidebarMobile } from "@/components/sidebar/sidebar-mobile";
 
@@ -11,6 +14,15 @@ interface Props {
 }
 
 export default function AboutPageLayout(props: Props) {
+    const pathname = usePathname();
+
+    const isAboutPage = pathname.includes("/about");
+
+    const isProjectsPage = pathname.includes("/projects");
+
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
+    const isContactPage = pathname.includes("/contact");
+
     const sidebarMobileRef = useRef<HTMLElement>(null);
 
     const [sidebarMobileHeight, setSidebarMobileHeight] = useState(0);
@@ -22,15 +34,22 @@ export default function AboutPageLayout(props: Props) {
     }, []);
 
     return (
-        <div className="grow md:grid md:grid-cols-[68px_244px_auto]">
-            {/* <div className="flex grow max-md:max-h-[calc(100%-var(--header-height)-var(--footer-height))] max-md:flex-col"> */}
+        <div
+            className={clsx(
+                "grow md:grid",
+                isAboutPage
+                    ? "md:grid-cols-[68px_244px_auto]"
+                    : "md:grid-cols-[312px_auto]",
+            )}
+        >
             <SubHeader />
             <SidebarMobile ref={sidebarMobileRef} />
-            <SidebarDesktop />
-            <DesktopPageMenu />
+            {isAboutPage && <SidebarDesktop />}
+            <DesktopPageMenu showContacts={isAboutPage}>
+                {isProjectsPage && <ProjectsFilter />}
+            </DesktopPageMenu>
             <div
                 className="grow md:grid md:grid-rows-[40px_auto]"
-                //className="grow overflow-y-auto overflow-x-hidden max-md:max-h-[calc(100%-var(--sidebar-mobile-height)-56px)]"
                 style={
                     {
                         "--sidebar-mobile-height": `${sidebarMobileHeight}px`,

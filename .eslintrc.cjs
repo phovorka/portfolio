@@ -3,18 +3,22 @@ const config = {
     env: {
         es2020: true,
     },
+    parser: "@typescript-eslint/parser",
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
+            ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
+            sourceType: "module", // Allows for the use of imports
         },
     },
-    plugins: ["check-file", "n"],
+    plugins: ["check-file", "n", "@typescript-eslint"],
     extends: [
         "next/core-web-vitals",
         "next/typescript",
         "prettier",
         "eslint:recommended",
         "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
     ],
     rules: {
         "no-console": "error",

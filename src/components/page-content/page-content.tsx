@@ -15,7 +15,7 @@ export function PageContent(props: Props) {
     const locale = useLocale();
 
     const menuItems = usePageMenu();
-    const pageContent = menuItems["/about/personal-info"].menuItems.find(
+    const pageContent = menuItems["/about/personal-info"].menuItems?.find(
         (item) => item.href.includes(props.slug),
     );
 

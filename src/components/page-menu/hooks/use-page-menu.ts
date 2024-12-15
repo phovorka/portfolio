@@ -15,7 +15,7 @@ export type FolderType = {
 export type MenuItems = {
     [key: string]: {
         foldres?: FolderType[];
-        menuItems: MenuItem[];
+        menuItems?: MenuItem[];
         title: string;
     };
 };
@@ -88,5 +88,6 @@ export function usePageMenu(): MenuItems {
             ],
             title: t("AboutPage.left-menu.hobbies.title"),
         },
+        "/projects": { title: t("ProjectsPage.left-menu.title") },
     };
 }

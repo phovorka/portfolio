@@ -28,3 +28,9 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: theme("backgroundColor.secondary.lightBlue");
 }
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+    }
+}

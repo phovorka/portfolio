@@ -53,5 +53,11 @@
             }
         },
         "empty-editor": "Open file from left menu to find out more."
+    },
+    "ProjectsPage": {
+        "title": "Projects",
+        "left-menu": {
+            "title": "projects"
+        }
     }
 }

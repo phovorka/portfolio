@@ -53,5 +53,11 @@
             }
         },
         "empty-editor": "Otevřete soubor z levé nabídky a zjistěte více."
+    },
+    "ProjectsPage": {
+        "title": "Projekty",
+        "left-menu": {
+            "title": "projekty"
+        }
     }
 }
