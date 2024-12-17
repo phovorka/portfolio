@@ -65,6 +65,7 @@
             },
             "web": "web",
             "web-app": "web-app"
-        }
+        },
+        "empty-projects": "No projects were found matching the selected filters."
     }
 }

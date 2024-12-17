@@ -65,6 +65,7 @@
             },
             "web": "web",
             "web-app": "webová-aplikace"
-        }
+        },
+        "empty-projects": "Nebyly nalezeny žádné projekty odpovídající vybraným filtrům."
     }
 }
