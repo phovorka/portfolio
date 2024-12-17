@@ -58,6 +58,13 @@
         "title": "Projekty",
         "left-menu": {
             "title": "projekty"
+        },
+        "project": {
+            "button": {
+                "view-project": "zobrazit-projekt"
+            },
+            "web": "web",
+            "web-app": "webová-aplikace"
         }
     }
 }

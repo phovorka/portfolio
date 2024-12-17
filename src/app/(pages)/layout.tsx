@@ -2,12 +2,12 @@
 
 import { usePathname } from "next/navigation";
 import { CSSProperties, ReactNode, useEffect, useRef, useState } from "react";
-import clsx from "clsx";
 import { SubHeader } from "@/components/header/subheader";
 import { DesktopPageMenu } from "@/components/page-menu/page-menu";
 import { ProjectsFilter } from "@/components/projects-filter/projects-filter";
 import { SidebarDesktop } from "@/components/sidebar/sidebar";
 import { SidebarMobile } from "@/components/sidebar/sidebar-mobile";
+import { cn } from "@/lib/utils";
 
 interface Props {
     children: ReactNode;
@@ -29,13 +29,15 @@ export default function AboutPageLayout(props: Props) {
 
     useEffect(() => {
         if (sidebarMobileRef.current) {
-            setSidebarMobileHeight(sidebarMobileRef.current?.offsetHeight);
+            setSidebarMobileHeight(
+                document.getElementById("sidebar-mobile")?.offsetHeight ?? 0,
+            );
         }
     }, []);
 
     return (
         <div
-            className={clsx(
+            className={cn(
                 "grow md:grid",
                 isAboutPage
                     ? "md:grid-cols-[68px_244px_auto]"
@@ -43,7 +45,9 @@ export default function AboutPageLayout(props: Props) {
             )}
         >
             <SubHeader />
-            <SidebarMobile ref={sidebarMobileRef} />
+            <SidebarMobile ref={sidebarMobileRef}>
+                {isProjectsPage && <ProjectsFilter />}
+            </SidebarMobile>
             {isAboutPage && <SidebarDesktop />}
             <DesktopPageMenu showContacts={isAboutPage}>
                 {isProjectsPage && <ProjectsFilter />}

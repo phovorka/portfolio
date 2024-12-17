@@ -11,7 +11,7 @@ import "./globals.css";
 const firaCode = Fira_Code({
     display: "swap",
     subsets: ["latin"],
-    weight: ["400"],
+    weight: ["400", "700"],
     variable: "--font-fira-code",
 });
 
@@ -43,7 +43,7 @@ export default async function RootLayout(props: Props) {
         <html className={`${firaCode.variable}`} lang={locale}>
             <NextIntlClientProvider messages={messages}>
                 <body className="h-screen min-h-screen p-4 md:p-16">
-                    <div className="relative flex h-full flex-col rounded-lg border border-primary bg-primary md:overflow-hidden">
+                    <div className="bg-primary-base relative flex h-full flex-col rounded-lg border border-primary md:overflow-hidden">
                         <Header locale={userLocale} />
                         {props.children}
                         <Footer />

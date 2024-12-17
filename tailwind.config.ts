@@ -37,7 +37,7 @@ export default {
     theme: {
         extend: {
             backgroundColor: {
-                primary: "#011627",
+                ...COLORS,
             },
             borderColor: {
                 primary: "#1E2D3D",

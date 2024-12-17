@@ -1,33 +1,45 @@
 "use client";
 
-import { RefObject } from "react";
+import { usePathname } from "next/navigation";
+import { ReactNode, RefObject } from "react";
+import { useMenuForPath } from "@/hooks/use-menu-for-path";
 import { Folder } from "../page-menu/folder";
-import { usePageMenu } from "../page-menu/hooks/use-page-menu";
 
 interface Props {
+    children?: ReactNode;
     ref: RefObject<HTMLElement | null>;
 }
 
 export function SidebarMobile(props: Props) {
-    const menuItems = usePageMenu();
+    const pathname = usePathname();
+
+    const menuConfig = useMenuForPath(pathname);
 
     return (
-        <aside className="w-full space-y-1 md:hidden" ref={props.ref}>
-            {Object.values(menuItems).map((item) => (
-                <details key={item.title}>
+        <aside
+            className="w-full space-y-1 md:hidden"
+            id="sidebar-mobile"
+            ref={props.ref}
+        >
+            {menuConfig.map((config) => (
+                <details key={config.title}>
                     <summary className="bg-dark-slate-blue px-7 py-1 text-white">
-                        {item.title}
+                        {config.title}
                     </summary>
-                    <div className="space-y-2 px-7 py-4">
-                        {item.foldres?.map((folder) => (
-                            <Folder
-                                color={folder.color}
-                                folder={folder}
-                                key={folder.label}
-                                menuItems={item.menuItems ?? []}
-                            />
-                        ))}
-                    </div>
+                    {config.menuItems ? (
+                        <div className="space-y-2 px-7 py-4">
+                            {config.foldres?.map((folder) => (
+                                <Folder
+                                    color={folder.color}
+                                    folder={folder}
+                                    key={folder.label}
+                                    menuItems={config.menuItems ?? []}
+                                />
+                            ))}
+                        </div>
+                    ) : (
+                        props.children
+                    )}
                 </details>
             ))}
         </aside>

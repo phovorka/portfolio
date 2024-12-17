@@ -14,7 +14,7 @@ export function NavigationMobile(props: Props) {
     }
 
     return (
-        <div className="absolute inset-x-0 bottom-[--footer-height] top-[--header-height] z-10 bg-primary">
+        <div className="bg-primary-base absolute inset-x-0 bottom-[--footer-height] top-[--header-height] z-10">
             <nav>
                 <ul role="menubar">
                     {menuItems.map((item) => (

@@ -12,12 +12,14 @@ export type FolderType = {
     label: string;
 };
 
+export type MenuConfig = {
+    foldres?: FolderType[];
+    menuItems?: MenuItem[];
+    title: string;
+};
+
 export type MenuItems = {
-    [key: string]: {
-        foldres?: FolderType[];
-        menuItems?: MenuItem[];
-        title: string;
-    };
+    [key: string]: MenuConfig;
 };
 
 export function usePageMenu(): MenuItems {

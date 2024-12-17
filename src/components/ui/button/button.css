@@ -1,0 +1,38 @@
+.button {
+    --bg-color: #1c2b3a;
+    --bg-color-hover: #263b50;
+    --color: theme("colors.white");
+
+    background-color: var(--bg-color);
+    border-radius: theme("borderRadius.lg");
+    color: var(--color);
+    font-size: theme("fontSize.sm");
+    line-height: theme("lineHeight.tight");
+    padding: theme("padding.3") theme("padding[3.5]");
+
+    &.is-hovered {
+        background-color: var(--bg-color-hover);
+    }
+
+    &.is-focused {
+        outline: none;
+    }
+
+    &--variant-secondary {
+        --bg-color: theme("backgroundColor.accent.orange");
+        --bg-color-hover: #ffac6b;
+        --color: theme("colors.primary.dark");
+    }
+
+    &--variant-ghost {
+        --bg-color: theme("backgroundColor.transparent");
+        --bg-color-hover: theme("backgroundColor.transparent");
+        --color: theme("colors.white");
+
+        border: 1px solid theme("borderColor.white");
+
+        &.is-hovered {
+            border-color: theme("borderColor.white/.50");
+        }
+    }
+}

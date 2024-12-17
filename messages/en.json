@@ -58,6 +58,13 @@
         "title": "Projects",
         "left-menu": {
             "title": "projects"
+        },
+        "project": {
+            "button": {
+                "view-project": "view-project"
+            },
+            "web": "web",
+            "web-app": "web-app"
         }
     }
 }
