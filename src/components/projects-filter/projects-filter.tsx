@@ -33,6 +33,7 @@ export function ProjectsFilter() {
             <CheckboxGroup
                 className="flex flex-col gap-2"
                 defaultValue={selectedLanguages}
+                key={searchParams.toString()}
             >
                 <Label className="sr-only">{t("ProjectsPage.title")}</Label>
                 {FILTER_TYPES.map((filter) => (

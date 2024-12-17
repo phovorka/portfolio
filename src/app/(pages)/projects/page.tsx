@@ -1,14 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { RiCloseFill } from "@remixicon/react";
 import { FILTER_TYPES } from "@/components/projects-filter/constants";
 import { Projects } from "@/components/projects/projects";
 import { isNotEmpty } from "@/utils/is-not-empty";
-import { revalidateProjects } from "@/utils/revalidate-projects";
 
 export default function ProjectsPage() {
+    const router = useRouter();
     const searchParams = useSearchParams();
 
     const selectedLanguages = searchParams.get("language")?.split(",") ?? [];
@@ -23,11 +23,7 @@ export default function ProjectsPage() {
                 {isNotEmpty(selectedLanguages) && (
                     <div className="flex h-full w-fit items-center gap-12 border-r border-primary px-3">
                         <div>{languageNames.join("; ")}</div>
-                        <Link
-                            className="hover:text-white"
-                            href="/projects"
-                            onClick={revalidateProjects}
-                        >
+                        <Link className="hover:text-white" href="/projects">
                             <RiCloseFill />
                         </Link>
                     </div>
