@@ -1,5 +1,6 @@
 {
     "Common": {
+        "all": "vše",
         "error": {
             "page-not-found": "Stránka nenalezena",
             "content-not-found": "Žádný obsah"

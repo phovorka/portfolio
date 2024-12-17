@@ -1,14 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { RiCloseFill } from "@remixicon/react";
+import { useTranslations } from "next-intl";
 import { FILTER_TYPES } from "@/components/projects-filter/constants";
 import { Projects } from "@/components/projects/projects";
 import { isNotEmpty } from "@/utils/is-not-empty";
 
 export default function ProjectsPage() {
-    const router = useRouter();
+    const t = useTranslations();
+
     const searchParams = useSearchParams();
 
     const selectedLanguages = searchParams.get("language")?.split(",") ?? [];
@@ -30,6 +32,17 @@ export default function ProjectsPage() {
                 )}
             </div>
             <div className="overflow-y-auto px-8 py-4 md:max-h-[calc(100vh-var(--header-height)-var(--footer-height)-40px-128px)]">
+                <p className="mb-4 flex gap-2 md:hidden">
+                    <span className="text-white">
+                        &#47;&#47;&nbsp;{t("ProjectsPage.left-menu.title")}
+                    </span>
+                    <span>
+                        &#47;&nbsp;
+                        {isNotEmpty(languageNames)
+                            ? languageNames.join("; ")
+                            : t("Common.all")}
+                    </span>
+                </p>
                 <Projects />
             </div>
         </>
