@@ -7,7 +7,7 @@ export function useMenuForPath(pathname: string): MenuConfig[] {
     const menuItems = usePageMenu();
 
     // Define sections to match against
-    const sections = ["/about", "/projects"];
+    const sections = ["/about", "/projects", "/contact"];
 
     // Find matching sections
     const matchedSections = sections.filter((section) =>

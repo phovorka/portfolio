@@ -68,5 +68,31 @@
             "web-app": "web-app"
         },
         "empty-projects": "No projects were found matching the selected filters."
+    },
+    "ContactPage": {
+        "title": "Contacts",
+        "left-menu": {
+            "title": "contacts",
+            "additional-contacts": {
+                "title": "find-me-also-in",
+                "instagram": "Instagram profile",
+                "twitter": "Twitter/X profile"
+            }
+        },
+        "form": {
+            "label": {
+                "name": "_name",
+                "email": "_email",
+                "message": "_message",
+                "submit": "submit-message"
+            }
+        },
+        "code": {
+            "label": {
+                "name": "name",
+                "email": "email",
+                "message": "message"
+            }
+        }
     }
 }

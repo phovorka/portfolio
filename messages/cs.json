@@ -68,5 +68,31 @@
             "web-app": "webová-aplikace"
         },
         "empty-projects": "Nebyly nalezeny žádné projekty odpovídající vybraným filtrům."
+    },
+    "ContactPage": {
+        "title": "Kontakty",
+        "left-menu": {
+            "title": "Kontakty",
+            "additional-contacts": {
+                "title": "najdete-mě-také-na",
+                "instagram": "Instagram profil",
+                "twitter": "Twitter/X profil"
+            }
+        },
+        "form": {
+            "label": {
+                "name": "_jméno",
+                "email": "_e-mail",
+                "message": "_zpráva",
+                "submit": "odeslat-zprávu"
+            }
+        },
+        "code": {
+            "label": {
+                "name": "jmeno",
+                "email": "e-mail",
+                "message": "zprava"
+            }
+        }
     }
 }

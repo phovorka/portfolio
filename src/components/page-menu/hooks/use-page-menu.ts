@@ -91,5 +91,6 @@ export function usePageMenu(): MenuItems {
             title: t("AboutPage.left-menu.hobbies.title"),
         },
         "/projects": { title: t("ProjectsPage.left-menu.title") },
+        "/contact": { title: t("ContactPage.left-menu.title") },
     };
 }

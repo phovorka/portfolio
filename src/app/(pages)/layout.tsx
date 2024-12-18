@@ -2,6 +2,8 @@
 
 import { usePathname } from "next/navigation";
 import { CSSProperties, ReactNode, useEffect, useRef, useState } from "react";
+import { AdditionalContacts } from "@/components/additional-contacts/additional-contacts";
+import { ContactDetails } from "@/components/contacts-details/contact-details";
 import { SubHeader } from "@/components/header/subheader";
 import { DesktopPageMenu } from "@/components/page-menu/page-menu";
 import { ProjectsFilter } from "@/components/projects-filter/projects-filter";
@@ -20,7 +22,6 @@ export default function AboutPageLayout(props: Props) {
 
     const isProjectsPage = pathname.includes("/projects");
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
     const isContactPage = pathname.includes("/contact");
 
     const sidebarMobileRef = useRef<HTMLElement>(null);
@@ -47,10 +48,22 @@ export default function AboutPageLayout(props: Props) {
             <SubHeader />
             <SidebarMobile ref={sidebarMobileRef}>
                 {isProjectsPage && <ProjectsFilter />}
+                {isContactPage && (
+                    <>
+                        <ContactDetails />
+                        <AdditionalContacts />
+                    </>
+                )}
             </SidebarMobile>
             {isAboutPage && <SidebarDesktop />}
             <DesktopPageMenu showContacts={isAboutPage}>
                 {isProjectsPage && <ProjectsFilter />}
+                {isContactPage && (
+                    <>
+                        <ContactDetails />
+                        <AdditionalContacts />
+                    </>
+                )}
             </DesktopPageMenu>
             <div
                 className="grow md:grid md:grid-rows-[40px_auto]"
