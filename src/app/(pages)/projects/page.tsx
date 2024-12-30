@@ -31,11 +31,8 @@ export default function ProjectsPage() {
                     </div>
                 )}
             </div>
-            <div className="overflow-y-auto px-8 py-4 md:max-h-[calc(100vh-var(--header-height)-var(--footer-height)-40px-128px)]">
-                <p className="mb-4 flex gap-2 md:hidden">
-                    <span className="text-white">
-                        &#47;&#47;&nbsp;{t("ProjectsPage.left-menu.title")}
-                    </span>
+            <div className="max-h-[calc(100vh-var(--header-height)-var(--footer-height)-var(--sidebar-mobile-height)-56px-32px)] overflow-y-auto px-8 py-4 md:max-h-[calc(100vh-var(--header-height)-var(--footer-height)-40px-128px)]">
+                <p className="mb-4 md:hidden">
                     <span>
                         &#47;&nbsp;
                         {isNotEmpty(languageNames)

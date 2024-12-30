@@ -22,7 +22,7 @@ export function ContactForm() {
 
     return (
         <Form
-            className="grid divide-x divide-primary overflow-y-auto md:max-h-[calc(100vh-var(--header-height)-var(--footer-height)-40px-128px)] xl:grid-cols-2"
+            className="grid max-h-[calc(100vh-var(--header-height)-var(--footer-height)-var(--sidebar-mobile-height)-56px-32px)] divide-primary overflow-y-auto md:max-h-[calc(100vh-var(--header-height)-var(--footer-height)-40px-128px)] xl:grid-cols-2 xl:divide-x"
             onSubmit={handleSubmitForm}
             options={{
                 defaultValues: { email: "", message: "", name: "" },
@@ -31,7 +31,7 @@ export function ContactForm() {
         >
             {({ control, watch }) => (
                 <>
-                    <div className="mx-auto w-full space-y-6 px-4 pt-14 xl:w-2/3">
+                    <div className="mx-auto w-full space-y-6 px-4 pt-10 xl:w-2/3 xl:pt-14">
                         <TextInput
                             control={control}
                             isRequired

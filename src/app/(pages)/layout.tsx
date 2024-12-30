@@ -2,11 +2,8 @@
 
 import { usePathname } from "next/navigation";
 import { CSSProperties, ReactNode, useEffect, useRef, useState } from "react";
-import { AdditionalContacts } from "@/components/additional-contacts/additional-contacts";
-import { ContactDetails } from "@/components/contacts-details/contact-details";
 import { SubHeader } from "@/components/header/subheader";
 import { DesktopPageMenu } from "@/components/page-menu/page-menu";
-import { ProjectsFilter } from "@/components/projects-filter/projects-filter";
 import { SidebarDesktop } from "@/components/sidebar/sidebar";
 import { SidebarMobile } from "@/components/sidebar/sidebar-mobile";
 import { cn } from "@/lib/utils";
@@ -20,20 +17,22 @@ export default function AboutPageLayout(props: Props) {
 
     const isAboutPage = pathname.includes("/about");
 
-    const isProjectsPage = pathname.includes("/projects");
-
-    const isContactPage = pathname.includes("/contact");
-
-    const sidebarMobileRef = useRef<HTMLElement>(null);
+    const sidebarMobileRef = useRef<HTMLDivElement>(null);
 
     const [sidebarMobileHeight, setSidebarMobileHeight] = useState(0);
 
     useEffect(() => {
-        if (sidebarMobileRef.current) {
-            setSidebarMobileHeight(
-                document.getElementById("sidebar-mobile")?.offsetHeight ?? 0,
-            );
+        if (!sidebarMobileRef.current) {
+            return;
         }
+
+        const resizeObserver = new ResizeObserver(() => {
+            if (sidebarMobileRef.current) {
+                setSidebarMobileHeight(sidebarMobileRef.current.offsetHeight);
+            }
+        });
+        resizeObserver.observe(sidebarMobileRef.current);
+        return () => resizeObserver.disconnect();
     }, []);
 
     return (
@@ -46,25 +45,9 @@ export default function AboutPageLayout(props: Props) {
             )}
         >
             <SubHeader />
-            <SidebarMobile ref={sidebarMobileRef}>
-                {isProjectsPage && <ProjectsFilter />}
-                {isContactPage && (
-                    <>
-                        <ContactDetails />
-                        <AdditionalContacts />
-                    </>
-                )}
-            </SidebarMobile>
-            {isAboutPage && <SidebarDesktop />}
-            <DesktopPageMenu showContacts={isAboutPage}>
-                {isProjectsPage && <ProjectsFilter />}
-                {isContactPage && (
-                    <>
-                        <ContactDetails />
-                        <AdditionalContacts />
-                    </>
-                )}
-            </DesktopPageMenu>
+            <SidebarMobile ref={sidebarMobileRef} />
+            <SidebarDesktop />
+            <DesktopPageMenu />
             <div
                 className="grow md:grid md:grid-rows-[40px_auto]"
                 style={

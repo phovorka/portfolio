@@ -8,7 +8,10 @@ export function SubHeader() {
 
     const menuItems = useMenuItems();
 
-    const menu = menuItems.find((item) => pathname === item.href);
+    const menu = menuItems.find(
+        (item) =>
+            pathname === item.href || pathname.startsWith(`${item.href}/`),
+    );
 
     return (
         <div className="flex h-14 w-full shrink-0 items-center px-7 text-sm text-white md:hidden">

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
-import { ReactNode } from "react";
+import { ReactNode, Suspense } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import Footer from "@/components/footer/footer";
@@ -42,10 +42,10 @@ export default async function RootLayout(props: Props) {
     return (
         <html className={`${firaCode.variable}`} lang={locale}>
             <NextIntlClientProvider messages={messages}>
-                <body className="h-screen min-h-screen p-4 md:p-16">
-                    <div className="bg-primary-base relative flex h-full flex-col rounded-lg border border-primary md:overflow-hidden">
+                <body className="h-screen min-h-screen overflow-hidden p-4 md:p-16">
+                    <div className="relative flex h-full flex-col rounded-lg border border-primary bg-primary-base md:overflow-hidden">
                         <Header locale={userLocale} />
-                        {props.children}
+                        <Suspense>{props.children}</Suspense>
                         <Footer />
                     </div>
                 </body>

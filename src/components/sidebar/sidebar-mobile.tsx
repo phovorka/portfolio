@@ -1,13 +1,13 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { ReactNode, RefObject } from "react";
+import { Fragment, ReactNode, RefObject } from "react";
 import { useMenuForPath } from "@/hooks/use-menu-for-path";
 import { Folder } from "../page-menu/folder";
 
 interface Props {
     children?: ReactNode;
-    ref: RefObject<HTMLElement | null>;
+    ref: RefObject<HTMLDivElement | null>;
 }
 
 export function SidebarMobile(props: Props) {
@@ -16,32 +16,34 @@ export function SidebarMobile(props: Props) {
     const menuConfig = useMenuForPath(pathname);
 
     return (
-        <aside
+        <div
             className="w-full space-y-1 md:hidden"
             id="sidebar-mobile"
             ref={props.ref}
         >
             {menuConfig.map((config) => (
-                <details key={config.title}>
-                    <summary className="bg-dark-slate-blue px-7 py-1 text-white">
-                        {config.title}
-                    </summary>
-                    {config.menuItems ? (
-                        <div className="space-y-2 px-7 py-4">
-                            {config.foldres?.map((folder) => (
-                                <Folder
-                                    color={folder.color}
-                                    folder={folder}
-                                    key={folder.label}
-                                    menuItems={config.menuItems ?? []}
-                                />
-                            ))}
-                        </div>
-                    ) : (
-                        props.children
-                    )}
-                </details>
+                <Fragment key={config.title}>
+                    {config.sections?.map((section) => (
+                        <details key={section.label}>
+                            <summary className="bg-dark-slate-blue px-7 py-1 text-white">
+                                {section.label}
+                            </summary>
+                            {section.items && (
+                                <div className="my-4 space-y-2">
+                                    {config.foldres?.map((folder) => (
+                                        <Folder
+                                            folder={folder}
+                                            key={folder.folder}
+                                            menuItems={section.items ?? []}
+                                        />
+                                    ))}
+                                </div>
+                            )}
+                            {section.Component}
+                        </details>
+                    ))}
+                </Fragment>
             ))}
-        </aside>
+        </div>
     );
 }

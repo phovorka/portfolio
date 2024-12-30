@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ComponentProps } from "react";
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 export function NavLinkMobile(props: ComponentProps<typeof Link>) {
     const { className, href, ...restProps } = props;
@@ -14,7 +14,7 @@ export function NavLinkMobile(props: ComponentProps<typeof Link>) {
     return (
         <Link
             aria-current={isActive ? "page" : undefined}
-            className={clsx(
+            className={cn(
                 "flex h-[--header-height] items-center border-b border-primary px-[18px] hover:text-white",
                 isActive && "text-white",
                 className,

@@ -12,7 +12,7 @@ export function useMenuItems(): NavLink[] {
     return [
         { href: "/", label: t("HomePage.navigation.home") },
         {
-            href: "/about/personal-info/me",
+            href: "/about",
             label: t("HomePage.navigation.about"),
         },
         { href: "/projects", label: t("HomePage.navigation.projects") },

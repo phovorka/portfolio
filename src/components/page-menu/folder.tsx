@@ -7,7 +7,6 @@ import { FolderType, MenuItem } from "./hooks/use-page-menu";
 interface Props {
     folder: FolderType;
     folderArrowIconSize?: number;
-    color: string;
     menuItems: MenuItem[];
 }
 
@@ -25,13 +24,13 @@ export function Folder(props: Props) {
     }, [menuItems, pathname]);
 
     return (
-        <details className="group/folder" open={isOpen}>
+        <details className="group/folder px-5 md:px-3.5" open={isOpen}>
             <summary className="flex cursor-pointer list-none items-center gap-2 hover:text-white [&::-webkit-details-marker]:hidden">
                 <RiArrowRightSLine
                     className="group-open/folder:rotate-90"
                     size={props.folderArrowIconSize ?? 24}
                 />
-                <RiFolder3Fill color={props.color} size={16} />
+                <RiFolder3Fill color={props.folder.color} size={16} />
                 {props.folder.label}
             </summary>
             <div className="mt-2 flex flex-col gap-2 pl-8">

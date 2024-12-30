@@ -1,7 +1,6 @@
 import fs from "fs";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import path from "path";
-import { usePageMenu } from "../page-menu/hooks/use-page-menu";
 import { PageContentDesktop } from "./page-content-desktop";
 import { PageContentMobile } from "./page-content-mobile";
 
@@ -10,14 +9,7 @@ interface Props {
 }
 
 export function PageContent(props: Props) {
-    const t = useTranslations();
-
     const locale = useLocale();
-
-    const menuItems = usePageMenu();
-    const pageContent = menuItems["/about/personal-info"].menuItems?.find(
-        (item) => item.href.includes(props.slug),
-    );
 
     let fileContent = "";
 
@@ -33,29 +25,15 @@ export function PageContent(props: Props) {
         console.error("File not found: ", error);
     }
 
-    if (!pageContent) {
-        return (
-            <div className="px-8 py-4">{t("Common.error.page-not-found")}</div>
-        );
-    }
-
-    if (!fileContent) {
-        return (
-            <div className="px-8 py-4">
-                {t("Common.error.content-not-found")}
-            </div>
-        );
-    }
-
     return (
         <>
             <PageContentDesktop
                 fileContent={fileContent}
-                pageContentLabel={pageContent.label}
+                pageContentLabel={props.slug}
             />
             <PageContentMobile
                 fileContent={fileContent}
-                pageContentLabel={pageContent.label}
+                pageContentLabel={props.slug}
             />
         </>
     );

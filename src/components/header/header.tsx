@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "../language-switcher/language-switcher";
@@ -17,9 +18,12 @@ export function Header(props: Props) {
 
     return (
         <header className="flex h-[--header-height] shrink-0 border-b border-primary max-lg:px-[18px] lg:grid lg:grid-cols-[minmax(auto,_312px)_auto_auto]">
-            <div className="flex items-center border-primary lg:border-r lg:px-[22px]">
+            <Link
+                className="flex items-center border-primary lg:border-r lg:px-[22px]"
+                href="/"
+            >
                 {t("HomePage.logo")}
-            </div>
+            </Link>
             <Navigation />
             <NavigationMobileToggler
                 isNavigationOpen={isNavigationOpen}

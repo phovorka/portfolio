@@ -19,16 +19,29 @@ body {
 
 ::-webkit-scrollbar-track {
     background-color: theme("backgroundColor.primary.base");
-    border: 1px solid theme("borderColor.primary");
+    border-left: 1px solid theme("borderColor.primary");
+    border-right: 1px solid theme("borderColor.primary");
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar {
     background-color: #f5f5f5;
+    overflow: hidden;
     width: theme("width.4");
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: theme("backgroundColor.secondary.lightBlue");
+}
+
+textarea {
+    resize: none;
+
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar {
+        border-bottom-right-radius: theme("borderRadius.lg");
+        border-top-right-radius: theme("borderRadius.lg");
+    }
 }
 
 @layer base {

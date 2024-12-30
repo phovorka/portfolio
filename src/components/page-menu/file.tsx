@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { RiMarkdownFill } from "@remixicon/react";
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 import { MenuItem } from "./hooks/use-page-menu";
 
 interface Props {
@@ -13,7 +13,7 @@ export function File(props: Props) {
 
     return (
         <Link
-            className={clsx(
+            className={cn(
                 "flex items-center gap-2 hover:text-white",
                 pathname.includes(props.menuItem.href) && "text-white",
             )}

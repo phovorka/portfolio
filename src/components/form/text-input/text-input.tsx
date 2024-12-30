@@ -61,20 +61,19 @@ export function TextInput<FormData extends FieldValues>(
                 <TextArea
                     className={({ isFocused }) =>
                         cn(
-                            "bg-primary-light rounded-lg border border-primary p-4",
+                            "rounded-lg border border-primary bg-primary-light p-4",
                             isFocused &&
                                 "border-secondary-lightBlue outline-none ring-2 ring-secondary-lightBlue/30",
                         )
                     }
                     ref={field.ref}
                     rows={6}
-                    style={{ resize: "none" }}
                 />
             ) : (
                 <Input
                     className={({ isFocused }) =>
                         cn(
-                            "bg-primary-light h-10 rounded-lg border border-primary px-4",
+                            "h-10 rounded-lg border border-primary bg-primary-light px-4",
                             isFocused &&
                                 "border-secondary-lightBlue outline-none ring-2 ring-secondary-lightBlue/30",
                         )

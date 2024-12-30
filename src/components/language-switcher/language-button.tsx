@@ -1,7 +1,7 @@
 "use client";
 
-import clsx from "clsx";
 import { Locale } from "@/i18n/config";
+import { cn } from "@/lib/utils";
 import { setUserLocale } from "@/services/locale";
 
 interface LanguageButtonProps {
@@ -13,7 +13,7 @@ interface LanguageButtonProps {
 export function LanguageButton(props: LanguageButtonProps) {
     return (
         <button
-            className={clsx(
+            className={cn(
                 "h-full border-l border-primary px-3.5 hover:bg-dark-slate-blue",
                 props.isActive ? "text-white" : "",
                 props.className,

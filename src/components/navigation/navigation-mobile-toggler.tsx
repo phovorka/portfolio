@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 import { LanguageSwitcher } from "../language-switcher/language-switcher";
 import { NavigationMobile } from "./navigation-mobile";
 
@@ -13,7 +13,7 @@ export function NavigationMobileToggler(props: Props) {
     return (
         <>
             <button
-                className={clsx(
+                className={cn(
                     "order-3 size-6 h-full lg:hidden",
                     !props.isNavigationOpen && "max-lg:ml-auto",
                 )}
@@ -46,7 +46,10 @@ export function NavigationMobileToggler(props: Props) {
                     locale={props.locale}
                 />
             )}
-            <NavigationMobile isOpen={props.isNavigationOpen} />
+            <NavigationMobile
+                isNavigationOpen={props.isNavigationOpen}
+                setIsNavigationOpen={props.setIsNavigationOpen}
+            />
         </>
     );
 }
