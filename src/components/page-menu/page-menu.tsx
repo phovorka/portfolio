@@ -19,16 +19,17 @@ export function DesktopPageMenu() {
                     <summary className="h-10 cursor-pointer border-b border-primary px-3.5 leading-10 group-open:text-white">
                         {section.label}
                     </summary>
-                    <div className="mt-4 space-y-2">
-                        {section.items &&
-                            menu.foldres?.map((folder) => (
+                    {section.items && (
+                        <div className="mt-4 space-y-2">
+                            {menu.foldres?.map((folder) => (
                                 <Folder
                                     folder={folder}
                                     key={folder.folder}
                                     menuItems={section.items ?? []}
                                 />
                             ))}
-                    </div>
+                        </div>
+                    )}
                     {section.Component && section.Component}
                 </details>
             ))}

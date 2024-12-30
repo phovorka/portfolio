@@ -1,7 +1,9 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { SubmitHandler } from "react-hook-form";
 import { z } from "zod";
+import { sendEmail } from "@/app/actions/send-email";
 import { Form } from "../form/form";
 import { TextInput } from "../form/text-input/text-input";
 import { Button } from "../ui/button/button";
@@ -18,7 +20,8 @@ export type ContactFormData = z.infer<typeof FORM_SCHEMA>;
 export function ContactForm() {
     const t = useTranslations();
 
-    const handleSubmitForm = async () => {};
+    const handleSubmitForm: SubmitHandler<ContactFormData> = async (data) =>
+        await sendEmail(data);
 
     return (
         <Form
