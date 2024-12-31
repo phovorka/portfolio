@@ -6,7 +6,7 @@ import InquiryEmail from "../../emails/inquiry";
 const transporter = nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
-    port: 587,
+    port: 465,
     secure: true,
     auth: {
         user: process.env.SMTP_SERVER_USERNAME,

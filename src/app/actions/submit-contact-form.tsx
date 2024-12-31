@@ -37,7 +37,7 @@ export async function submitContactForm(
 
         return {
             success: false,
-            message: "Něco se nepovedlo, zkuste to prosím znovu",
+            message: `Něco se nepovedlo, zkuste to prosím znovu: ${error}`,
         };
     }
 }
