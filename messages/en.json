@@ -1,6 +1,7 @@
 {
     "Common": {
         "all": "all",
+        "sending": "sending",
         "error": {
             "page-not-found": "Page not found",
             "content-not-found": "No content"
@@ -85,6 +86,11 @@
                 "email": "_email",
                 "message": "_message",
                 "submit": "submit-message"
+            },
+            "success": {
+                "heading": "Thank you! 🤘",
+                "description": "Your message has been accepted. You will recieve answer really soon!",
+                "button": "send-new-message"
             }
         },
         "code": {

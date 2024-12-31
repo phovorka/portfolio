@@ -7,7 +7,6 @@ import {
     Heading,
     Hr,
     Html,
-    Preview,
     Row,
     Section,
     Text,
@@ -34,7 +33,6 @@ export default function InquiryEmail(props: Readonly<Props>) {
                     }}
                 />
             </Head>
-            <Preview>fsdfsdf</Preview>
             <Body style={body}>
                 <Container>
                     <Heading style={heading}>Nová poptávka z webu</Heading>

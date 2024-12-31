@@ -1,6 +1,7 @@
 {
     "Common": {
         "all": "vše",
+        "sending": "odesílání",
         "error": {
             "page-not-found": "Stránka nenalezena",
             "content-not-found": "Žádný obsah"
@@ -85,6 +86,11 @@
                 "email": "_e-mail",
                 "message": "_zpráva",
                 "submit": "odeslat-zprávu"
+            },
+            "success": {
+                "heading": "Děkuji za zprávu! 🤘",
+                "description": "Vaši zprávu jsem obdržel. Odpověď dostanete co nejdříve!",
+                "button": "poslat-novou-zprávu"
             }
         },
         "code": {
