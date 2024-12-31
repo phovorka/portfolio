@@ -4,9 +4,9 @@ import { TECHNOLOGIES } from "./constants";
 export type Technology = (typeof TECHNOLOGIES)[number];
 
 export type Project = {
-    description: string;
+    description: keyof IntlMessages["ProjectsPage"]["projects"];
     id: number;
-    image: string | StaticImageData;
+    images: StaticImageData[];
     link: string;
     released: string;
     technologies: Technology[];

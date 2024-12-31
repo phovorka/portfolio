@@ -65,15 +65,37 @@
             "button": {
                 "view-project": "zobrazit-projekt"
             },
+            "not-released": "produkce-neběží",
             "web": "web",
             "web-app": "webová-aplikace"
+        },
+        "projects": {
+            "atrea": "Firemní interní aplikace zjednodušující vkládání a získávání dat napříč všemi odděleními společnosti Atrea.",
+            "github-finder": "Webová aplikace pro vyhledávání uživatelů na GitHubu. Zobrazuje detaily uživatele a statistiky.",
+            "integromat-careers": "Kariérní portál pro Integromat. Nabídky práce a prezentace týmu a kultury.",
+            "integromat-help": "Znalostní báze pro uživatele Integromatu. Dokumentace, návody a tipy.",
+            "mjd": "Implementace katalogu firem s vyhledáváním a filtrováním pro internetovou verzi časopisu Můj dům krok za krokem.",
+            "movie-finder": "Webová aplikace pro vyhledávání filmů. Zobrazuje základní informace o filmu s přiloženým trailerem.",
+            "photovoltaics": "Implementace kalkulačky pro výpočet úspory při instalaci fotovoltaiky. S detailními výpočty a vizualizací.",
+            "portfolio-old": "První verze mého osobního portfolia. Statická stránka s informacemi o mně a mých projektech.",
+            "sticky-notes": "Jednoduchá aplikace pro vytváření a správu poznámek pod uživatelským účtem.",
+            "weather-app": "Jednoduchá webová aplikace pro zobrazení aktuálního počasí, s předpovědí na následující dny.",
+            "yarotravel": "Web cestovní agentury YARO Travel. Postavený na systému CeSYS.",
+            "em-travel": "Web cestovní agentury Em Travel. Postavený na systému CeSYS.",
+            "e-dovolena": "Web cestovní agentury eDovolená. Postavený na systému CeSYS.",
+            "jatour": "Web cestovní agentury Jatour. Postavený na systému CeSYS.",
+            "oryx": "Web cestovní agentury Oryx. Postavený na systému CeSYS.",
+            "beach-travel": "Web cestovní agentury BEACH TRAVEL. Postavený na systému CeSYS.",
+            "innova-travel": "Web cestovní agentury Innova travel. Postavený na systému CeSYS.",
+            "travel-tour": "Web cestovní agentury Travel Tour. Postavený na systému CeSYS.",
+            "artemis-tour": "Web cestovní agentury Artemis Tour. Postavený na systému CeSYS."
         },
         "empty-projects": "Nebyly nalezeny žádné projekty odpovídající vybraným filtrům."
     },
     "ContactPage": {
         "title": "Kontakty",
         "left-menu": {
-            "title": "Kontakty",
+            "title": "kontakty",
             "additional-contacts": {
                 "title": "najdete-mě-také-na",
                 "instagram": "Instagram profil",

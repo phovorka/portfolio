@@ -1,5 +1,6 @@
 "use client";
 
+import { Dispatch, SetStateAction } from "react";
 import { Locale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 import { setUserLocale } from "@/services/locale";
@@ -8,6 +9,7 @@ interface LanguageButtonProps {
     className?: string;
     isActive: boolean;
     locale: Locale;
+    setIsNavigationOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 export function LanguageButton(props: LanguageButtonProps) {
@@ -18,7 +20,10 @@ export function LanguageButton(props: LanguageButtonProps) {
                 props.isActive ? "text-white" : "",
                 props.className,
             )}
-            onClick={() => setUserLocale(props.locale)}
+            onClick={() => {
+                setUserLocale(props.locale);
+                props.setIsNavigationOpen(false);
+            }}
             title={props.locale === "en" ? "English" : "Čeština"}
         >
             {props.locale === "en" ? "en" : "cz"}

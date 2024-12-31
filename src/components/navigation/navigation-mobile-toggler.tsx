@@ -44,6 +44,7 @@ export function NavigationMobileToggler(props: Props) {
                 <LanguageSwitcher
                     className="ml-auto mr-[18px] lg:hidden"
                     locale={props.locale}
+                    setIsNavigationOpen={props.setIsNavigationOpen}
                 />
             )}
             <NavigationMobile

@@ -1,6 +1,5 @@
 import { ReactElement } from "react";
 import {
-    RiAngularjsFill,
     RiCss3Fill,
     RiHtml5Fill,
     RiJavascriptFill,
@@ -74,7 +73,6 @@ export const FILTER_TYPES: FilterType[] = [
     },
     { icon: <RiReactjsFill size={24} />, id: "react", label: "React" },
     { icon: <RiNextjsFill size={24} />, id: "nextjs", label: "Next.js" },
-    { icon: <RiAngularjsFill size={24} />, id: "angular", label: "Angular" },
     {
         icon: (
             <svg

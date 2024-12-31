@@ -104,7 +104,10 @@ export function usePageMenu(): MenuItems {
         "/about/hobbies": {
             sections: [
                 { label: t("AboutPage.left-menu.hobbies.title") },
-                { Component: <Contacts />, label: "contacts" },
+                {
+                    Component: <Contacts />,
+                    label: t("ContactPage.left-menu.title"),
+                },
             ],
             menuItems: [
                 { label: "Sports", href: "/about/hobbies/sports" },
@@ -124,8 +127,14 @@ export function usePageMenu(): MenuItems {
         },
         "/contact": {
             sections: [
-                { Component: <Contacts />, label: "contacts" },
-                { Component: <AdditionalContacts />, label: "find-me-also-in" },
+                {
+                    Component: <Contacts />,
+                    label: t("ContactPage.left-menu.title"),
+                },
+                {
+                    Component: <AdditionalContacts />,
+                    label: t("ContactPage.left-menu.additional-contacts.title"),
+                },
             ],
             title: t("ContactPage.left-menu.title"),
         },

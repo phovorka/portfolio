@@ -65,8 +65,30 @@
             "button": {
                 "view-project": "view-project"
             },
+            "not-released": "not-in-production",
             "web": "web",
             "web-app": "web-app"
+        },
+        "projects": {
+            "atrea": "Internal company application simplifying data entry and retrieval across all departments of Atrea.",
+            "github-finder": "A web application for searching users on GitHub. It displays user details and statistics.",
+            "integromat-careers": "Career portal for Integromat. Job offers and presentation of the team and culture.",
+            "integromat-help": "Knowledge base for Integromat users. Documentation, guides and tips.",
+            "mjd": "Implementation of a company catalog with search and filtering for the online version of the magazine Můj dům krok za krokem.",
+            "movie-finder": "A web application for searching for movies. It displays basic information about the movie with an attached trailer.",
+            "photovoltaics": "Implementation of a calculator for calculating savings when installing photovoltaics. With detailed calculations and visualization.",
+            "portfolio-old": "The first version of my personal portfolio. A static page with information about me and my projects.",
+            "sticky-notes": "A simple application for creating and managing notes under a user account.",
+            "weather-app": "A simple web application for displaying current weather conditions, with a forecast for the following days.",
+            "yarotravel": "YARO Travel travel agency website. Built on the CeSYS system.",
+            "em-travel": "Em Travel travel agency website. Built on the CeSYS system.",
+            "e-dovolena": "eDovolená travel agency website. Built on the CeSYS system.",
+            "jatour": "Jatour travel agency website. Built on the CeSYS system.",
+            "oryx": "Oryx travel agency website. Built on the CeSYS system.",
+            "beach-travel": "BEACH TRAVEL travel agency website. Built on the CeSYS system.",
+            "innova-travel": "Innova travel travel agency website. Built on the CeSYS system.",
+            "travel-tour": "Travel Tour travel agency website. Built on the CeSYS system.",
+            "artemis-tour": "Artemis Tour travel agency website. Built on the CeSYS system."
         },
         "empty-projects": "No projects were found matching the selected filters."
     },

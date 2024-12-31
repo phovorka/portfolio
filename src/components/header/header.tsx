@@ -33,6 +33,7 @@ export function Header(props: Props) {
             <LanguageSwitcher
                 className="ml-auto max-lg:hidden"
                 locale={props.locale}
+                setIsNavigationOpen={setIsNavigationOpen}
             />
         </header>
     );
