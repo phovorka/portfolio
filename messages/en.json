@@ -48,7 +48,12 @@
                 }
             },
             "professional-info": {
-                "title": "professional-info"
+                "title": "professional-info",
+                "folder": {
+                    "work": {
+                        "title": "work"
+                    }
+                }
             },
             "hobbies": {
                 "title": "hobbies"

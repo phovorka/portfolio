@@ -1,0 +1,19 @@
+My next work experience was 
+at the Prague startup Integromat (now Make).
+
+I started there as a Frontend coder in a smaller team that was in charge of various 
+presentation websites and landing pages. 
+The primary stack was HTML/Pug, Sass, JavaScript/jQuery.
+
+I was in charge of coding a new website with a presentation of the culture 
+and team in the company, along with a list of vacant positions.
+I also participated in the redesign of existing sites, such as the internal knowledge base 
+or documentation for the API.
+
+After some time, our team was moved to the Core team, which was in charge of the product itself.
+There, they were already writing in Angular and Typescript.
+
+This chapter gave me a lot of experience in web development and agile development of own product.
+
+The combination of a full remote working mode and the ongoing restructuring of the company 
+made me think whether to try something new, ideally near Liberec.

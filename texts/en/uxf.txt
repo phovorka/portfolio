@@ -1,0 +1,21 @@
+My next stop was at a group of sports enthusiasts at UX Fans.
+
+A few of my former colleagues worked there and I was able to use my freshly 
+recharged knowledge of React.
+As soon as this opportunity arose, I jumped at it and very quickly integrated 
+myself into the team.
+
+My work included developing websites and web applications for well-known companies and startups.
+For example, I participated in the development of an internal system for Atrea, 
+a company catalog for My House Step by Step, creating a calculator for calculating 
+savings when installing photovoltaics, searching for hotels for Orea and developing components 
+for Rehatab or Předplátko.
+In the meantime, I developed an internal UI kit with my colleagues.
+
+The development here was carried out in an agile manner and every week I met with 
+other developers for regular sessions, where we discussed and shared our experiences.
+
+The tech stack included React, Next.js, Typescript, Tailwind CSS, GraphQL.
+
+After some time, I decided to look for new challenges and opportunities 
+for further professional growth.

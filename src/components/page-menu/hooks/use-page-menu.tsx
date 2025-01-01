@@ -86,7 +86,35 @@ export function usePageMenu(): MenuItems {
         },
         "/about/professional-info": {
             sections: [
-                { label: t("AboutPage.left-menu.professional-info.title") },
+                {
+                    items: [
+                        {
+                            folder: "work",
+                            href: "/about/professional-info/cesys",
+                            label: "cesys",
+                        },
+                        {
+                            folder: "work",
+                            href: "/about/professional-info/make",
+                            label: "make/integromat",
+                        },
+                        {
+                            folder: "work",
+                            href: "/about/professional-info/uxf",
+                            label: "uxf",
+                        },
+                    ],
+                    label: t("AboutPage.left-menu.professional-info.title"),
+                },
+            ],
+            foldres: [
+                {
+                    color: "#E99287",
+                    folder: "work",
+                    label: t(
+                        "AboutPage.left-menu.professional-info.folder.work.title",
+                    ),
+                },
             ],
             menuItems: [
                 {

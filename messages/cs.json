@@ -48,7 +48,12 @@
                 }
             },
             "professional-info": {
-                "title": "profesni-info"
+                "title": "profesni-info",
+                "folder": {
+                    "work": {
+                        "title": "prace"
+                    }
+                }
             },
             "hobbies": {
                 "title": "konicky"

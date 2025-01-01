@@ -1,7 +1,6 @@
-import Link from "next/link";
-import { RiCloseFill } from "@remixicon/react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { monoBlue } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { Tab } from "./tab";
 
 interface Props {
     fileContent: string;
@@ -12,15 +11,7 @@ export function PageContentDesktop(props: Props) {
     return (
         <>
             <div className="h-10 border-b border-primary max-md:hidden">
-                <div className="flex h-full w-fit items-center gap-12 border-r border-primary px-3">
-                    {props.pageContentLabel}
-                    <Link
-                        className="hover:text-white"
-                        href="/about/personal-info"
-                    >
-                        <RiCloseFill />
-                    </Link>
-                </div>
+                <Tab />
             </div>
             <div className="overflow-y-auto px-8 py-4 max-md:hidden md:max-h-[calc(100dvh-var(--header-height)-var(--footer-height)-40px-128px)]">
                 <SyntaxHighlighter
