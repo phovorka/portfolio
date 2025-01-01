@@ -42,7 +42,7 @@ export default async function RootLayout(props: Props) {
     return (
         <html className={`${firaCode.variable}`} lang={locale}>
             <NextIntlClientProvider messages={messages}>
-                <body className="h-screen min-h-screen overflow-hidden p-4 md:p-16">
+                <body className="h-dvh overflow-hidden p-4 md:p-16">
                     <div className="relative flex h-full flex-col rounded-lg border border-primary bg-primary-base md:overflow-hidden">
                         <Header locale={userLocale} />
                         <Suspense>{props.children}</Suspense>

@@ -9,7 +9,7 @@ export function PageContentMobile(props: Props) {
     const t = useTranslations();
 
     return (
-        <div className="overflow-y-auto px-7 py-9 max-md:max-h-[calc(100vh-32px-var(--header-height)-56px-var(--sidebar-mobile-height)-var(--footer-height))] md:hidden">
+        <div className="overflow-y-auto px-7 py-9 max-md:max-h-[calc(100dvh-32px-var(--header-height)-56px-var(--sidebar-mobile-height)-var(--footer-height))] md:hidden">
             <p className="mb-4">
                 <span className="text-white">
                     &#47;&#47;&nbsp;

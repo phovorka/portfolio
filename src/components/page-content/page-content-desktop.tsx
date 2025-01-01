@@ -22,7 +22,7 @@ export function PageContentDesktop(props: Props) {
                     </Link>
                 </div>
             </div>
-            <div className="overflow-y-auto px-8 py-4 max-md:hidden md:max-h-[calc(100vh-var(--header-height)-var(--footer-height)-40px-128px)]">
+            <div className="overflow-y-auto px-8 py-4 max-md:hidden md:max-h-[calc(100dvh-var(--header-height)-var(--footer-height)-40px-128px)]">
                 <SyntaxHighlighter
                     customStyle={{
                         backgroundColor: "transparent",

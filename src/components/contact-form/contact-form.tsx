@@ -32,7 +32,7 @@ export function ContactForm() {
 
     return (
         <Form
-            className="grid max-h-[calc(100vh-var(--header-height)-var(--footer-height)-var(--sidebar-mobile-height)-56px-32px)] divide-primary overflow-y-auto md:max-h-[calc(100vh-var(--header-height)-var(--footer-height)-40px-128px)] xl:grid-cols-2 xl:divide-x"
+            className="grid max-h-[calc(100dvh-var(--header-height)-var(--footer-height)-var(--sidebar-mobile-height)-56px-32px)] divide-primary overflow-y-auto md:max-h-[calc(100vh-var(--header-height)-var(--footer-height)-40px-128px)] xl:grid-cols-2 xl:divide-x"
             onSubmit={handleSubmitForm}
             options={{
                 defaultValues: { email: "", message: "", name: "" },

@@ -31,7 +31,7 @@ export default function ProjectsPage() {
                     </div>
                 )}
             </div>
-            <div className="max-h-[calc(100vh-var(--header-height)-var(--footer-height)-var(--sidebar-mobile-height)-56px-32px)] overflow-y-auto px-8 py-4 md:max-h-[calc(100vh-var(--header-height)-var(--footer-height)-40px-128px)]">
+            <div className="max-h-[calc(100dvh-var(--header-height)-var(--footer-height)-var(--sidebar-mobile-height)-56px-32px)] overflow-y-auto px-8 py-4 md:max-h-[calc(100vh-var(--header-height)-var(--footer-height)-40px-128px)]">
                 <p className="mb-4 md:hidden">
                     <span>
                         &#47;&nbsp;

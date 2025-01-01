@@ -22,9 +22,10 @@ import mjd3 from "@/public/projects/mjd/img3.png";
 import movie1 from "@/public/projects/movie-db/img1.png";
 import movie2 from "@/public/projects/movie-db/img2.png";
 import oryx from "@/public/projects/oryx.jpg";
-import portfolio1 from "@/public/projects/portfolio-old/img1.png";
-import portfolio2 from "@/public/projects/portfolio-old/img2.png";
-import portfolio3 from "@/public/projects/portfolio-old/img3.png";
+import portfolioOld1 from "@/public/projects/portfolio-old/img1.png";
+import portfolioOld2 from "@/public/projects/portfolio-old/img2.png";
+import portfolioOld3 from "@/public/projects/portfolio-old/img3.png";
+import portfolio from "@/public/projects/portfolio.png";
 import scc1 from "@/public/projects/scc/img1.png";
 import scc2 from "@/public/projects/scc/img2.png";
 import sticky1 from "@/public/projects/sticky-notes/img1.png";
@@ -50,8 +51,18 @@ export const TECHNOLOGIES = [
 
 export const PROJECTS: Project[] = [
     {
-        description: "mjd",
+        description: "portfolio",
         id: 1,
+        images: [portfolio],
+        link: "",
+        released: "2025-01-01",
+        technologies: ["react", "nextjs", "typescript", "tailwind"],
+        title: "Portfolio",
+        type: "web",
+    },
+    {
+        description: "mjd",
+        id: 2,
         images: [mjd1, mjd2, mjd3],
         link: "",
         released: "",
@@ -61,7 +72,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "atrea",
-        id: 2,
+        id: 3,
         images: [atrea1, atrea2, atrea3],
         link: "https://www.uxf.cz/reference/atrea",
         released: "2023-09-01",
@@ -71,7 +82,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "photovoltaics",
-        id: 3,
+        id: 4,
         images: [scc1, scc2],
         link: "https://www.setricelecesko.cz/fotovoltaika",
         released: "2023-06-01",
@@ -81,7 +92,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "integromat-careers",
-        id: 4,
+        id: 5,
         images: [carrers1, careers2, careers3],
         link: "",
         released: "2021-05-01",
@@ -98,7 +109,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "integromat-help",
-        id: 5,
+        id: 6,
         images: [help1, help2, help3, help4],
         link: "",
         released: "2021-06-01",
@@ -115,7 +126,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "github-finder",
-        id: 6,
+        id: 7,
         images: [gh1, gh2],
         link: "https://react-github-finder-app-alpha.vercel.app/",
         released: "2023-02-01",
@@ -125,7 +136,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "weather-app",
-        id: 7,
+        id: 8,
         images: [weather],
         link: "https://react-weather-app-iota-ruddy.vercel.app/",
         released: "2023-02-01",
@@ -135,8 +146,8 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "portfolio-old",
-        id: 8,
-        images: [portfolio1, portfolio2, portfolio3],
+        id: 9,
+        images: [portfolioOld1, portfolioOld2, portfolioOld3],
         link: "https://mujweb.netlify.app/",
         released: "2020-04-01",
         technologies: ["html", "css", "sass", "javascript", "restapi"],
@@ -145,7 +156,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "movie-finder",
-        id: 9,
+        id: 10,
         images: [movie1, movie2],
         link: "https://movie-finder-app.netlify.app/",
         released: "2022-09-01",
@@ -155,7 +166,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "sticky-notes",
-        id: 10,
+        id: 11,
         images: [sticky1, sticky2],
         link: "https://sticky-notes-app.netlify.app/",
         released: "2020-09-01",
@@ -165,7 +176,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "yarotravel",
-        id: 11,
+        id: 12,
         images: [yarotravel],
         link: "https://www.yarotravel.cz/",
         released: "2021-01-01",
@@ -175,7 +186,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "em-travel",
-        id: 12,
+        id: 13,
         images: [emTravel],
         link: "https://www.emdovolena.cz/",
         released: "2020-11-01",
@@ -185,7 +196,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "e-dovolena",
-        id: 13,
+        id: 14,
         images: [edovolena],
         link: "https://www.edovolena.cz/",
         released: "2020-09-01",
@@ -195,7 +206,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "jatour",
-        id: 14,
+        id: 15,
         images: [jatour],
         link: "https://www.jatour.cz/",
         released: "2020-05-01",
@@ -205,7 +216,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "oryx",
-        id: 15,
+        id: 16,
         images: [oryx],
         link: "https://www.caoryx.cz/",
         released: "2020-03-01",
@@ -215,7 +226,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "beach-travel",
-        id: 16,
+        id: 17,
         images: [beachTravel],
         link: "https://www.beachtravel.cz/",
         released: "2019-10-01",
@@ -225,7 +236,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "innova-travel",
-        id: 17,
+        id: 18,
         images: [innova],
         link: "https://www.innova-travel.cz/",
         released: "2019-08-01",
@@ -235,7 +246,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "travel-tour",
-        id: 18,
+        id: 19,
         images: [travelTour],
         link: "https://www.travel-tour.cz/",
         released: "2019-04-01",
@@ -245,7 +256,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "artemis-tour",
-        id: 19,
+        id: 20,
         images: [artemisTour],
         link: "https://www.artemis-tour.cz/",
         released: "2019-02-01",

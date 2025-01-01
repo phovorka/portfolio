@@ -88,7 +88,8 @@
             "beach-travel": "BEACH TRAVEL travel agency website. Built on the CeSYS system.",
             "innova-travel": "Innova travel travel agency website. Built on the CeSYS system.",
             "travel-tour": "Travel Tour travel agency website. Built on the CeSYS system.",
-            "artemis-tour": "Artemis Tour travel agency website. Built on the CeSYS system."
+            "artemis-tour": "Artemis Tour travel agency website. Built on the CeSYS system.",
+            "portfolio": "My current web portfolio, which you are currently viewing."
         },
         "empty-projects": "No projects were found matching the selected filters."
     },
