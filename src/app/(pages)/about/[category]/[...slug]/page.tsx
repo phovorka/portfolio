@@ -1,6 +1,19 @@
 import { getLocale } from "next-intl/server";
 import { PageContent } from "@/components/page-content/page-content";
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+    return [
+        { slug: "cesys" },
+        { slug: "high-school" },
+        { slug: "make" },
+        { slug: "me" },
+        { slug: "university" },
+        { slug: "uxf" },
+    ];
+}
+
 export default async function AboutWithSlugPage({
     params,
 }: {
