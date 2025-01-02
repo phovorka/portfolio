@@ -1,3 +1,4 @@
+import { getLocale } from "next-intl/server";
 import { PageContent } from "@/components/page-content/page-content";
 
 export default async function AboutWithSlugPage({
@@ -7,5 +8,15 @@ export default async function AboutWithSlugPage({
 }) {
     const slug = (await params).slug;
 
-    return <PageContent slug={slug} />;
+    const locale = await getLocale();
+
+    const { default: Content } = await import(
+        `@/markdown/${locale}/${slug}.mdx`
+    );
+
+    return (
+        <PageContent slug={slug}>
+            <Content />
+        </PageContent>
+    );
 }
