@@ -24,7 +24,10 @@ export async function generateMetadata({
 
     const t = await getTranslations({ locale });
 
-    return { title: t("HomePage.title") };
+    return {
+        description: t("Metadata.description"),
+        title: t("Metadata.title"),
+    };
 }
 
 interface Props {

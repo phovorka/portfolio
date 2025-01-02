@@ -19,7 +19,7 @@ export function ContactFormCode(props: Props) {
     });
 
     return (
-        <div className="pt-14">
+        <div className="pt-14 max-md:hidden">
             <SyntaxHighlighter
                 codeTagProps={{ style: { background: "#011627" } }}
                 customStyle={{

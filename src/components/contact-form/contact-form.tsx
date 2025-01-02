@@ -42,7 +42,7 @@ export function ContactForm() {
             {({ control, reset, watch }) => (
                 <>
                     {state.success ? (
-                        <div className="m-auto max-w-md text-center">
+                        <div className="m-auto max-w-md px-4 pt-10 text-center">
                             <p className="text-[26px] text-white">
                                 {t("ContactPage.form.success.heading")}
                             </p>
@@ -87,7 +87,6 @@ export function ContactForm() {
                             </Button>
                         </div>
                     )}
-
                     <ContactFormCode watch={watch} />
                 </>
             )}

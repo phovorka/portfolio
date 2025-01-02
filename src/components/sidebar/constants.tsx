@@ -1,8 +1,4 @@
-import {
-    RiGamepadFill,
-    RiTerminalBoxFill,
-    RiUser4Fill,
-} from "@remixicon/react";
+import { RiTerminalBoxFill, RiUser4Fill } from "@remixicon/react";
 
 export const routes = [
     {
@@ -15,9 +11,9 @@ export const routes = [
         label: "Professional Info",
         icon: <RiTerminalBoxFill />,
     },
-    {
+    /* {
         path: "/about/hobbies",
         label: "Hobbies",
         icon: <RiGamepadFill />,
-    },
+    }, */
 ];

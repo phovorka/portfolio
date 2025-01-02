@@ -7,8 +7,11 @@
             "content-not-found": "Žádný obsah"
         }
     },
+    "Metadata": {
+        "description": "Jsem Lukáš Rác, frontend developer specializující se na moderní webové technologie a vývoj webových aplikací. Tvořím uživatelsky přívětivé a responzivní weby pro skvělý uživatelský zážitek.",
+        "title": "Lukáš Rác | Webové stránky a aplikace"
+    },
     "HomePage": {
-        "title": "Lukáš Rác | Webové stránky a aplikace",
         "logo": "lukas-rac",
         "navigation": {
             "home": "_ahoj",

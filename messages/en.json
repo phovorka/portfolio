@@ -7,8 +7,11 @@
             "content-not-found": "No content"
         }
     },
+    "Metadata": {
+        "description": "I am Lukáš Rác, a frontend developer specializing in modern web technologies and web application development. I create user-friendly and responsive websites for a great user experience.",
+        "title": "Lukáš Rác | Websites and Apps"
+    },
     "HomePage": {
-        "title": "Lukáš Rác | Websites and Apps",
         "logo": "lukas-rac",
         "navigation": {
             "home": "_hello",

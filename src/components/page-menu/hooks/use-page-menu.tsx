@@ -129,7 +129,7 @@ export function usePageMenu(): MenuItems {
             ],
             title: t("AboutPage.left-menu.professional-info.title"),
         },
-        "/about/hobbies": {
+        /* "/about/hobbies": {
             sections: [
                 { label: t("AboutPage.left-menu.hobbies.title") },
                 {
@@ -143,7 +143,7 @@ export function usePageMenu(): MenuItems {
                 { label: "Travel", href: "/about/hobbies/travel" },
             ],
             title: t("AboutPage.left-menu.hobbies.title"),
-        },
+        }, */
         "/projects": {
             sections: [
                 {
