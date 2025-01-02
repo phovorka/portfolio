@@ -60,7 +60,7 @@ export function ContactForm() {
                             </Button>
                         </div>
                     ) : (
-                        <div className="mx-auto w-full space-y-6 px-4 pt-10 xl:w-2/3 xl:pt-14">
+                        <div className="mx-auto w-full space-y-6 px-4 py-10 xl:w-2/3 xl:py-14">
                             <TextInput
                                 control={control}
                                 isRequired
