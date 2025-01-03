@@ -47,7 +47,9 @@ export default async function RootLayout(props: Props) {
         <html className={`${firaCode.variable}`} lang={locale}>
             <head>
                 <PlausibleProvider
+                    customDomain="https://analytics.lukis.dev"
                     domain="lukis.dev"
+                    hash
                     selfHosted
                     trackOutboundLinks
                 />
