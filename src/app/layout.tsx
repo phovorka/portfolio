@@ -3,6 +3,7 @@ import { Fira_Code } from "next/font/google";
 import { ReactNode, Suspense } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
+import PlausibleProvider from "next-plausible";
 import Footer from "@/components/footer/footer";
 import { Header } from "@/components/header/header";
 import { getUserLocale } from "@/services/locale";
@@ -44,6 +45,13 @@ export default async function RootLayout(props: Props) {
 
     return (
         <html className={`${firaCode.variable}`} lang={locale}>
+            <head>
+                <PlausibleProvider
+                    domain="lukis.dev"
+                    selfHosted
+                    trackOutboundLinks
+                />
+            </head>
             <NextIntlClientProvider messages={messages}>
                 <body className="h-dvh overflow-hidden p-4 md:p-16">
                     <div className="relative flex h-full flex-col rounded-lg border border-primary bg-primary-base md:overflow-hidden">
