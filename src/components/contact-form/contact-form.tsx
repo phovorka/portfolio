@@ -80,10 +80,19 @@ export function ContactForm() {
                                 label={`${t("ContactPage.form.label.message")}:`}
                                 name="message"
                             />
-                            <Button type="submit">
-                                {isPending
-                                    ? `${t("Common.sending")}...`
-                                    : t("ContactPage.form.label.submit")}
+                            <Button
+                                className="gap flex items-baseline gap-1"
+                                isDisabled={isPending}
+                                type="submit"
+                            >
+                                {isPending ? (
+                                    <>
+                                        {t("Common.sending")}
+                                        <div className="loader" />
+                                    </>
+                                ) : (
+                                    t("ContactPage.form.label.submit")
+                                )}
                             </Button>
                         </div>
                     )}
