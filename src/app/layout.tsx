@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import { ReactNode, Suspense } from "react";
+import { HighlightInit } from "@highlight-run/next/client";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import PlausibleProvider from "next-plausible";
@@ -44,25 +45,38 @@ export default async function RootLayout(props: Props) {
     const messages = await getMessages();
 
     return (
-        <html className={`${firaCode.variable}`} lang={locale}>
-            <head>
-                <PlausibleProvider
-                    customDomain="https://analytics.lukis.dev"
-                    domain="lukis.dev"
-                    hash
-                    selfHosted
-                    trackOutboundLinks
-                />
-            </head>
-            <NextIntlClientProvider messages={messages}>
-                <body className="h-dvh overflow-hidden p-4 md:p-16">
-                    <div className="relative flex h-full flex-col rounded-lg border border-primary bg-primary-base md:overflow-hidden">
-                        <Header locale={userLocale} />
-                        <Suspense>{props.children}</Suspense>
-                        <Footer />
-                    </div>
-                </body>
-            </NextIntlClientProvider>
-        </html>
+        <>
+            <HighlightInit
+                networkRecording={{
+                    enabled: true,
+                    recordHeadersAndBody: true,
+                    urlBlocklist: [],
+                }}
+                projectId="qe98ykpd"
+                serviceName="portfolio"
+                tracingOrigins
+            />
+
+            <html className={`${firaCode.variable}`} lang={locale}>
+                <head>
+                    <PlausibleProvider
+                        customDomain="https://analytics.lukis.dev"
+                        domain="lukis.dev"
+                        hash
+                        selfHosted
+                        trackOutboundLinks
+                    />
+                </head>
+                <NextIntlClientProvider messages={messages}>
+                    <body className="h-dvh overflow-hidden p-4 md:p-16">
+                        <div className="relative flex h-full flex-col rounded-lg border border-primary bg-primary-base md:overflow-hidden">
+                            <Header locale={userLocale} />
+                            <Suspense>{props.children}</Suspense>
+                            <Footer />
+                        </div>
+                    </body>
+                </NextIntlClientProvider>
+            </html>
+        </>
     );
 }
