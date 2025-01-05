@@ -25,7 +25,11 @@ export default function ProjectsPage() {
                 {isNotEmpty(selectedLanguages) && (
                     <div className="flex h-full w-fit items-center gap-12 border-r border-primary px-3">
                         <div>{languageNames.join("; ")}</div>
-                        <Link className="hover:text-white" href="/projects">
+                        <Link
+                            aria-label="Reset filters"
+                            className="hover:text-white"
+                            href="/projects"
+                        >
                             <RiCloseFill />
                         </Link>
                     </div>

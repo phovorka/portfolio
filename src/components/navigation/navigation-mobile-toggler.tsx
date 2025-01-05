@@ -13,6 +13,7 @@ export function NavigationMobileToggler(props: Props) {
     return (
         <>
             <button
+                aria-label="Toggle navigation"
                 className={cn(
                     "order-3 size-6 h-full lg:hidden",
                     !props.isNavigationOpen && "max-lg:ml-auto",

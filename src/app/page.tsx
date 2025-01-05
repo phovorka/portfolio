@@ -14,7 +14,7 @@ export default function Home() {
                     <h1 className="text-[62px] leading-tight text-white">
                         {t("HomePage.hero.title")}
                     </h1>
-                    <p className="text-secondary-blue text-xl lg:text-[32px]">
+                    <p className="text-xl text-secondary-blue lg:text-[32px]">
                         &gt; {t("HomePage.hero.position")}
                     </p>
                     <p className="mt-20">

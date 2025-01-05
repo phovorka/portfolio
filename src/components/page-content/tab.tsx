@@ -21,6 +21,7 @@ export function Tab() {
         <div className="flex h-full w-fit items-center gap-12 border-r border-primary px-3">
             {label?.at(0)?.label}
             <Link
+                aria-label="Reset filters"
                 className="hover:text-white"
                 href={`/about/${pathname.includes("personal-info") ? "personal-info" : "professional-info"}`}
             >
