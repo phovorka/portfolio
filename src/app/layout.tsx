@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import { ReactNode, Suspense } from "react";
 import { HighlightInit } from "@highlight-run/next/client";
+import { Analytics } from "@vercel/analytics/next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import PlausibleProvider from "next-plausible";
@@ -74,6 +75,7 @@ export default async function RootLayout(props: Props) {
                             <Suspense>{props.children}</Suspense>
                             <Footer />
                         </div>
+                        <Analytics />
                     </body>
                 </NextIntlClientProvider>
             </html>
