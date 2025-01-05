@@ -40,8 +40,10 @@ export async function generateMetadata({
                 },
             ],
             locale,
+            siteName: t("Metadata.title"),
             title: t("Metadata.title"),
             type: "website",
+            url: process.env.NEXT_PUBLIC_URL,
         },
         title: t("Metadata.title"),
     };
