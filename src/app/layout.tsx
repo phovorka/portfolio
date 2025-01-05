@@ -9,6 +9,8 @@ import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import PlausibleProvider from "next-plausible";
 import Footer from "@/components/footer/footer";
 import { Header } from "@/components/header/header";
+import ogImageCs from "@/public/og_image_cs.png";
+import ogImageEn from "@/public/og_image_en.png";
 import { getUserLocale } from "@/services/locale";
 import "./globals.css";
 
@@ -30,6 +32,17 @@ export async function generateMetadata({
 
     return {
         description: t("Metadata.description"),
+        openGraph: {
+            description: t("Metadata.description"),
+            images: [
+                {
+                    url: locale === "en" ? ogImageEn.src : ogImageCs.src,
+                },
+            ],
+            locale,
+            title: t("Metadata.title"),
+            type: "website",
+        },
         title: t("Metadata.title"),
     };
 }
