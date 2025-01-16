@@ -30,6 +30,10 @@
         }
     },
     "AboutPage": {
+        "sidebar": {
+            "personal-info": "Personal Info",
+            "professional-info": "Professional Info"
+        },
         "left-menu": {
             "personal-info": {
                 "title": "personal-info",

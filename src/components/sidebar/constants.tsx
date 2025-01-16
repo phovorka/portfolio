@@ -1,14 +1,21 @@
+import { ReactNode } from "react";
 import { RiTerminalBoxFill, RiUser4Fill } from "@remixicon/react";
 
-export const routes = [
+type Route = {
+    path: string;
+    label: keyof IntlMessages["AboutPage"]["sidebar"];
+    icon: ReactNode;
+};
+
+export const routes: Route[] = [
     {
         path: "/about/personal-info",
-        label: "Personal Info",
+        label: "personal-info",
         icon: <RiUser4Fill />,
     },
     {
         path: "/about/professional-info",
-        label: "Professional Info",
+        label: "professional-info",
         icon: <RiTerminalBoxFill />,
     },
     /* {

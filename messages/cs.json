@@ -30,6 +30,10 @@
         }
     },
     "AboutPage": {
+        "sidebar": {
+            "personal-info": "Osobní info",
+            "professional-info": "Profesní info"
+        },
         "left-menu": {
             "personal-info": {
                 "title": "osobni-info",

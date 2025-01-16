@@ -2,9 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { routes } from "./constants";
 
 export function SidebarDesktop() {
+    const t = useTranslations();
+
     const pathname = usePathname();
 
     const isAboutPage = pathname.includes("/about");
@@ -31,7 +34,7 @@ export function SidebarDesktop() {
                                 }
                                 href={route.path}
                                 role="menuitem"
-                                title={route.label}
+                                title={t(`AboutPage.sidebar.${route.label}`)}
                             >
                                 {route.icon}
                             </Link>
