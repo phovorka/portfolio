@@ -8,11 +8,11 @@
         }
     },
     "Metadata": {
-        "description": "Jsem Lukáš Rác, frontend developer specializující se na moderní webové technologie a vývoj webových aplikací. Tvořím uživatelsky přívětivé a responzivní weby pro skvělý uživatelský zážitek.",
-        "title": "Lukáš Rác | Webové stránky a aplikace"
+        "description": "Jsem Petr Hovorka, frontend developer specializující se na moderní webové technologie a vývoj webových aplikací. Tvořím uživatelsky přívětivé a responzivní weby pro skvělý uživatelský zážitek.",
+        "title": "LPetr Hovorka | Webové stránky a aplikace"
     },
     "HomePage": {
-        "logo": "lukas-rac",
+        "logo": "Petr-Hovorka",
         "navigation": {
             "home": "_ahoj",
             "about": "_o-mne",
@@ -23,7 +23,7 @@
             "find-me-in": "najdete mě na"
         },
         "hero": {
-            "title": "Lukáš Rác",
+            "title": "Petr Hovorka",
             "subtitle": "Ahoj. Jsem",
             "position": "Frontend developer",
             "github-comment": "koukněte na můj profil na GitHubu"
