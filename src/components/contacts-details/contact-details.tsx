@@ -12,16 +12,16 @@ export function ContactDetails() {
             <div className="flex flex-col gap-1.5 px-3.5 py-[18px]">
                 <a
                     className="flex items-center gap-2 hover:text-white"
-                    href="mailto:lukiss482@gmail.com"
+                    href="mailto:hovorkapetr@gmail.com"
                 >
                     <RiMailFill size={16} />
-                    lukiss482@gmail.com
+                    hovorkapetr@gmail.com
                 </a>
                 <a
                     className="flex items-center gap-2 hover:text-white"
-                    href="tel:+420604305632"
+                    href="tel:+420773598551"
                 >
-                    <RiPhoneFill size={16} /> +420 604 305 632
+                    <RiPhoneFill size={16} /> +420 773 598 551
                 </a>
             </div>
         </details>

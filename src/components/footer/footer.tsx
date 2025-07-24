@@ -10,7 +10,7 @@ export default function Footer() {
             </div>
             <a
                 className="flex items-center border-r border-primary px-3.5 hover:bg-dark-slate-blue"
-                href="https://www.linkedin.com/in/lukas-rac/"
+                href="https://www.linkedin.com/in/petr-hovorka/"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -27,7 +27,7 @@ export default function Footer() {
             </a>
             <a
                 className="flex items-center border-r border-primary px-3.5 hover:bg-dark-slate-blue"
-                href="https://www.facebook.com/lukisrac/"
+                href="https://www.facebook.com/petrhovorka/"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -44,12 +44,12 @@ export default function Footer() {
             </a>
             <a
                 className="flex items-center gap-1 border-primary px-3.5 hover:bg-dark-slate-blue md:ml-auto md:border-l md:px-6"
-                href="https://github.com/lukisrac"
+                href="https://github.com/petrhovorka"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="GitHub"
             >
-                <span className="max-md:hidden">@lukisrac</span>
+                <span className="max-md:hidden">@petrhovorka</span>
                 <svg
                     fill="currentColor"
                     height="24"
