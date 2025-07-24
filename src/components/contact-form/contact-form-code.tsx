@@ -1,7 +1,7 @@
 import { useFormatter } from "next-intl";
 import { UseFormWatch } from "react-hook-form";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/styles";
 import { ContactFormData } from "./contact-form";
 
 interface Props {
@@ -18,36 +18,20 @@ export function ContactFormCode(props: Props) {
         year: "numeric",
     });
 
+    const formData = props.watch();
+
+    const codeString = `
+// User's Contact Information:
+// Name: ${formData.name || "N/A"}
+// Email: ${formData.email || "N/A"}
+// Date: ${formattedDate}
+
+${formData.message || "// No message provided."}
+`;
+
     return (
-        <div className="pt-14 max-md:hidden">
-            <SyntaxHighlighter
-                codeTagProps={{ style: { background: "#011627" } }}
-                customStyle={{
-                    background: "#011627",
-                }}
-                language="javascript"
-                lineProps={{
-                    style: {
-                        fontFamily: "var(--font-fira-code)",
-                        wordBreak: "break-word",
-                        whiteSpace: "pre-wrap",
-                    },
-                }}
-                showLineNumbers
-                style={oneDark}
-                wrapLines
-            >{`const button = document.querySelector('#submit-button');
-
-const message = {
- name: "${props.watch("name")}",
- email: "${props.watch("email")}",
- message: "${props.watch("message")}",
- date: "${formattedDate}"
-}
-
-button.addEventListener('click', () => {
- form.send(name, email, message);
-})`}</SyntaxHighlighter>
-        </div>
+        <SyntaxHighlighter language="typescript" style={vscDarkPlus}>
+            {codeString}
+        </SyntaxHighlighter>
     );
 }
