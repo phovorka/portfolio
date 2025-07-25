@@ -44,7 +44,7 @@ export default function Footer() {
             </a>
             <a
                 className="flex items-center gap-1 border-primary px-3.5 hover:bg-dark-slate-blue md:ml-auto md:border-l md:px-6"
-                href="https://github.com/petrhovorka"
+                href="https://github.com/phovorka"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="GitHub"

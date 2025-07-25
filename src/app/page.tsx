@@ -27,11 +27,11 @@ export default function Home() {
                             &quot;
                             <a
                                 className="underline"
-                                href="https://github.com/PetrHovorka"
+                                href="https://github.com/phovorka"
                                 rel="noreferrer"
                                 target="_blank"
                             >
-                                https://github.com/PetrHovorka
+                                https://github.com/phovorka
                             </a>
                             &quot;
                         </span>
