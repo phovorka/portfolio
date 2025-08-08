@@ -22,9 +22,7 @@ import mjd3 from "@/public/projects/mjd/img3.png";
 import movie1 from "@/public/projects/movie-db/img1.png";
 import movie2 from "@/public/projects/movie-db/img2.png";
 import oryx from "@/public/projects/oryx.jpg";
-import portfolioOld1 from "@/public/projects/portfolio-old/img1.png";
-import portfolioOld2 from "@/public/projects/portfolio-old/img2.png";
-import portfolioOld3 from "@/public/projects/portfolio-old/img3.png";
+
 import portfolio from "@/public/projects/portfolio.png";
 import scc1 from "@/public/projects/scc/img1.png";
 import scc2 from "@/public/projects/scc/img2.png";
@@ -144,16 +142,7 @@ export const PROJECTS: Project[] = [
         title: "Weather App",
         type: "app",
     },
-    {
-        description: "portfolio-old",
-        id: 9,
-        images: [portfolioOld1, portfolioOld2, portfolioOld3],
-        link: "https://mujweb.netlify.app/",
-        released: "2020-04-01",
-        technologies: ["html", "css", "sass", "javascript", "restapi"],
-        title: "Portfolio v1",
-        type: "web",
-    },
+ 
     {
         description: "movie-finder",
         id: 10,
