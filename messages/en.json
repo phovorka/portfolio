@@ -100,7 +100,8 @@
             "innova-travel": "Innova travel travel agency website. Built on the CeSYS system.",
             "travel-tour": "Travel Tour travel agency website. Built on the CeSYS system.",
             "artemis-tour": "Artemis Tour travel agency website. Built on the CeSYS system.",
-            "portfolio": "My current web portfolio, which you are currently viewing."
+            "portfolio": "My current web portfolio, which you are currently viewing.",
+            "mi-band":"Description miband"
         },
         "empty-projects": "No projects were found matching the selected filters."
     },

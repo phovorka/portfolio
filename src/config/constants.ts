@@ -32,9 +32,9 @@ import travelTour from "@/public/projects/travel-tour.jpg";
 import weather from "@/public/projects/weather-app/img1.png";
 import yarotravel from "@/public/projects/yarotravel.jpg";
 import { Project } from "./types";
-import miband1 from "@/public/projects/mi-band/img1.png";
-import miband2 from "@/public/projects/mi-band/img2.png";
-import miband3 from "@/public/projects/mi-band/img3.png";
+import miband1 from "@/public/projects/mi-band/miband1.jpg";
+import miband2 from "@/public/projects/mi-band/miband2.jpg";
+import miband3 from "@/public/projects/mi-band/miband3.jpg";
 
 export const TECHNOLOGIES = [
     "html",

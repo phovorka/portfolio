@@ -100,7 +100,8 @@
             "innova-travel": "Web cestovní agentury Innova travel. Postavený na systému CeSYS.",
             "travel-tour": "Web cestovní agentury Travel Tour. Postavený na systému CeSYS.",
             "artemis-tour": "Web cestovní agentury Artemis Tour. Postavený na systému CeSYS.",
-            "portfolio": "Moje aktuální webové portfolio, které si právě prohlížíte."
+            "portfolio": "Moje aktuální webové portfolio, které si právě prohlížíte.",
+            "mi-band":"Popis webu miband"
         },
         "empty-projects": "Nebyly nalezeny žádné projekty odpovídající vybraným filtrům."
     },
