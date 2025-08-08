@@ -32,6 +32,9 @@ import travelTour from "@/public/projects/travel-tour.jpg";
 import weather from "@/public/projects/weather-app/img1.png";
 import yarotravel from "@/public/projects/yarotravel.jpg";
 import { Project } from "./types";
+import miband1 from "@/public/projects/mi-band/img1.png";
+import miband2 from "@/public/projects/mi-band/img2.png";
+import miband3 from "@/public/projects/mi-band/img3.png";
 
 export const TECHNOLOGIES = [
     "html",
@@ -45,6 +48,8 @@ export const TECHNOLOGIES = [
     "nextjs",
     "graphql",
     "restapi",
+    "three.js",
+    "Node.js/Express",
 ] as const;
 
 export const PROJECTS: Project[] = [
@@ -251,6 +256,16 @@ export const PROJECTS: Project[] = [
         released: "2019-02-01",
         technologies: ["html", "css", "sass", "javascript", "jquery"],
         title: "Artemis Tour",
+        type: "web",
+    },
+    {
+        description: "mi-band",
+        id: 21,
+        images: [miband1,miband2,miband3],
+        link: "https://www.mi-band.cz/",
+        released: "2025-08-01",
+        technologies: ["html", "css", "sass", "javascript", "three.js", "Node.js/Express"],
+        title: "Mi-band.cz",
         type: "web",
     },
 ];
