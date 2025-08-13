@@ -101,7 +101,8 @@
             "travel-tour": "Travel Tour travel agency website. Built on the CeSYS system.",
             "artemis-tour": "Artemis Tour travel agency website. Built on the CeSYS system.",
             "portfolio": "My current web portfolio, which you are currently viewing.",
-            "mi-band":"Description miband"
+            "mi-band":"Description miband",
+             "assembly3d":"Popis webu assembly 3d"
         },
         "empty-projects": "No projects were found matching the selected filters."
     },

@@ -268,4 +268,14 @@ export const PROJECTS: Project[] = [
         title: "Mi-band.cz",
         type: "web",
     },
+    {
+        description: "assembly3d",
+        id: 21,
+        images: [miband1,miband2,miband3],
+        link: "https://www.assembly3D.cz/",
+        released: "2025-08-01",
+        technologies: ["html", "css", "sass", "javascript", "three.js", "Node.js/Express"],
+        title: "Assembly3d.cz",
+        type: "web",
+    },
 ];

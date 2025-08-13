@@ -101,7 +101,8 @@
             "travel-tour": "Web cestovní agentury Travel Tour. Postavený na systému CeSYS.",
             "artemis-tour": "Web cestovní agentury Artemis Tour. Postavený na systému CeSYS.",
             "portfolio": "Moje aktuální webové portfolio, které si právě prohlížíte.",
-            "mi-band":"Popis webu miband"
+            "mi-band":"Popis webu miband",
+            "assembly3d":"Popis webu assembly 3d"
         },
         "empty-projects": "Nebyly nalezeny žádné projekty odpovídající vybraným filtrům."
     },
