@@ -278,4 +278,14 @@ export const PROJECTS: Project[] = [
         title: "Assembly3d.cz",
         type: "web",
     },
+    {
+        description: "dago",
+        id: 21,
+        images: [miband1,miband2,miband3],
+        link: "https://www.dago.cz/",
+        released: "2025-08-01",
+        technologies: ["html", "css", "sass", "javascript", "three.js", "Node.js/Express"],
+        title: "dago.cz",
+        type: "web",
+    },
 ];
