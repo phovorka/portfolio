@@ -35,6 +35,10 @@ import { Project } from "./types";
 import miband1 from "@/public/projects/mi-band/miband1.jpg";
 import miband2 from "@/public/projects/mi-band/miband2.jpg";
 import miband3 from "@/public/projects/mi-band/miband3.jpg";
+import dago1 from "@/public/projects/dago/dago1.jpg";
+import dago2 from "@/public/projects/dago/dago2.jpg";
+import assembly3d from "@/public/projects/assembly3d/assembly3d.jpg";
+import kiwico from "@/public/projects/kiwico/kiwico.jpg";
 
 export const TECHNOLOGIES = [
     "html",
@@ -265,27 +269,37 @@ export const PROJECTS: Project[] = [
         link: "https://www.mi-band.cz/",
         released: "2025-08-01",
         technologies: ["html", "css", "sass", "javascript", "three.js", "Node.js/Express"],
-        title: "Mi-band.cz",
+        title: "Mi-band",
         type: "web",
     },
     {
         description: "assembly3d",
         id: 21,
-        images: [miband1,miband2,miband3],
+        images: [assembly3d],
         link: "https://www.assembly3D.cz/",
         released: "2025-08-01",
         technologies: ["html", "css", "sass", "javascript", "three.js", "Node.js/Express"],
-        title: "Assembly3d.cz",
+        title: "Assembly 3D",
         type: "web",
     },
     {
         description: "dago",
         id: 21,
-        images: [miband1,miband2,miband3],
+        images: [dago1,dago2],
         link: "https://www.dago.cz/",
         released: "2025-08-01",
         technologies: ["html", "css", "sass", "javascript", "three.js", "Node.js/Express"],
-        title: "dago.cz",
+        title: "DAGO",
+        type: "web",
+    },
+    {
+        description: "kiwico",
+        id: 21,
+        images: [kiwico],
+        link: "https://www.kiwico.com/",
+        released: "2025-08-01",
+        technologies: ["html", "css", "sass", "javascript", "three.js", "Node.js/Express"],
+        title: "KiwiCo",
         type: "web",
     },
 ];
