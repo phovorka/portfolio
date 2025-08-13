@@ -39,7 +39,7 @@ import dago1 from "@/public/projects/dago/dago1.jpg";
 import dago2 from "@/public/projects/dago/dago2.jpg";
 import assembly3d from "@/public/projects/assembly3d/assembly3d.jpg";
 import kiwico from "@/public/projects/kiwico/kiwico.jpg";
-import 3dconfig from "@/public/projects/3dconfig/3dconfig.jpg";
+import d3config from "@/public/projects/3dconfig/3dconfig.jpg";
 
 export const TECHNOLOGIES = [
     "html",
@@ -66,6 +66,56 @@ export const PROJECTS: Project[] = [
         released: "2025-01-01",
         technologies: ["react", "nextjs", "typescript", "tailwind"],
         title: "Portfolio",
+        type: "web",
+    },
+    {
+        description: "kiwico",
+        id: 2,
+        images: [kiwico],
+        link: "https://www.kiwico.com/",
+        released: "2025-08-01",
+        technologies: ["react", "nextjs", "typescript", "tailwind", "graphql"],
+        title: "KiwiCo",
+        type: "web",
+    },
+    {
+        description: "3dconfig",
+        id: 2,
+        images: [d3config],
+        link: "https://3dconfig.com/",
+        released: "2025-08-01",
+        technologies: ["react", "nextjs", "typescript", "tailwind", "graphql"],
+        title: "3DConfig",
+        type: "web",
+    },
+    {
+        description: "mi-band",
+        id: 3,
+        images: [miband1,miband2,miband3],
+        link: "https://www.mi-band.cz/",
+        released: "2025-08-01",
+        technologies: ["html", "css", "sass", "javascript", "three.js", "Node.js/Express"],
+        title: "Mi-band",
+        type: "web",
+    },
+    {
+        description: "assembly3d",
+        id: 3,
+        images: [assembly3d],
+        link: "https://www.assembly3D.cz/",
+        released: "2025-08-01",
+        technologies: ["html", "css","react", "sass", "javascript", "three.js", "Node.js/Express"],
+        title: "Assembly 3D",
+        type: "web",
+    },
+    {
+        description: "dago",
+        id: 4,
+        images: [dago1,dago2],
+        link: "https://www.dago.cz/",
+        released: "2025-08-01",
+        technologies: ["html", "css", "sass", "javascript"],
+        title: "DAGO",
         type: "web",
     },
     {
@@ -263,54 +313,6 @@ export const PROJECTS: Project[] = [
         title: "Artemis Tour",
         type: "web",
     },
-    {
-        description: "mi-band",
-        id: 3,
-        images: [miband1,miband2,miband3],
-        link: "https://www.mi-band.cz/",
-        released: "2025-08-01",
-        technologies: ["html", "css", "sass", "javascript", "three.js", "Node.js/Express"],
-        title: "Mi-band",
-        type: "web",
-    },
-    {
-        description: "assembly3d",
-        id: 3,
-        images: [assembly3d],
-        link: "https://www.assembly3D.cz/",
-        released: "2025-08-01",
-        technologies: ["html", "css","react", "sass", "javascript", "three.js", "Node.js/Express"],
-        title: "Assembly 3D",
-        type: "web",
-    },
-    {
-        description: "dago",
-        id: 4,
-        images: [dago1,dago2],
-        link: "https://www.dago.cz/",
-        released: "2025-08-01",
-        technologies: ["html", "css", "sass", "javascript"],
-        title: "DAGO",
-        type: "web",
-    },
-    {
-        description: "kiwico",
-        id: 2,
-        images: [kiwico],
-        link: "https://www.kiwico.com/",
-        released: "2025-08-01",
-        technologies: ["react", "nextjs", "typescript", "tailwind", "graphql"],
-        title: "KiwiCo",
-        type: "web",
-    },
-    {
-        description: "3dconfig",
-        id: 2,
-        images: [3dconfig],
-        link: "https://3dconfig.com/",
-        released: "2025-08-01",
-        technologies: ["react", "nextjs", "typescript", "tailwind", "graphql"],
-        title: "3DConfig",
-        type: "web",
-    },
+
+
 ];
