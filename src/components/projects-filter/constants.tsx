@@ -77,6 +77,28 @@ export const FILTER_TYPES: FilterType[] = [
         icon: (
             <svg
                 className="size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"
+                    fill="currentColor"
+                    fillOpacity=".2"
+                />
+                <path
+                    d="M13.2 8.5v7.2a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                    fill="currentColor"
+                />
+            </svg>
+        ),
+        id: "threejs",
+        label: "Three.js",
+    },
+    {
+        icon: (
+            <svg
+                className="size-6"
                 fill="currentColor"
                 viewBox="0 0 30 30"
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,26 +122,5 @@ export const FILTER_TYPES: FilterType[] = [
         id: "restapi",
         label: "REST API",
     },
-    {
-        icon: (
-            <svg
-                className="size-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"
-                    fill="currentColor"
-                    fillOpacity=".2"
-                />
-                <path
-                    d="M13.2 8.5v7.2a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
-                    fill="currentColor"
-                />
-            </svg>
-        ),
-        id: "threejs",
-        label: "Three.js",
-    },
+ 
 ];
