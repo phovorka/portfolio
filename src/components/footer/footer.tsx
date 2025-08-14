@@ -17,8 +17,8 @@ export default function Footer() {
                 className="flex items-center border-r border-primary px-3.5 hover:bg-dark-slate-blue"
                 onClick={handleSoon}
                 href="https://www.linkedin.com/"
-                rel="noopener noreferrer"
                 target="_blank"
+                rel="noopener noreferrer"
                 title="LinkedIn"
             >
                 <svg
@@ -33,9 +33,8 @@ export default function Footer() {
             </a>
             <a
                 className="flex items-center border-r border-primary px-3.5 hover:bg-dark-slate-blue"
-                onClick={handleSoon}
                 rel="noopener noreferrer"
-                target="_blank"    
+                target="_blank"
                 title="Facebook"    
                 onClick={handleSoon}
             >

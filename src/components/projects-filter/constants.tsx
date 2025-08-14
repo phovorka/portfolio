@@ -76,16 +76,16 @@ export const FILTER_TYPES: FilterType[] = [
     {
         icon: (
             <svg
-            aria-label="TypeScript"
             className="size-[18px]"
             fill="none"
             strokeMiterlimit="10"
             version="1.1"
             viewBox="0 0 226.77 226.77"
             xmlns="http://www.w3.org/2000/svg"
+            aria-label="TypeScript"
             >
             <g
-                transform="translate(8.964 4.2527)"
+ transform="translate(8.964 4.2527)"
                 fillRule="evenodd"
                 stroke="#000"
                 strokeLinecap="square"
