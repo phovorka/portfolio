@@ -76,21 +76,32 @@ export const FILTER_TYPES: FilterType[] = [
     {
         icon: (
             <svg
-                className="size-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            aria-label="TypeScript"
+            className="size-[18px]"
+            fill="none"
+            strokeMiterlimit="10"
+            version="1.1"
+            viewBox="0 0 226.77 226.77"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              transform="translate(8.964 4.2527)"
+              fillRule="evenodd"
+              stroke="#000"
+              strokeLinecap="square"
+              strokeLinejoin="round"
+              strokeWidth="4"
             >
-                <path
-                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"
-                    fill="currentColor"
-                    fillOpacity=".2"
-                />
-                <path
-                    d="M13.2 8.5v7.2a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
-                    fill="currentColor"
-                />
-            </svg>
+             <rect fill="currentColor" height="512" rx="15%" width="512" />
+
+              <path d="m63.02 200.61-43.213-174.94 173.23 49.874z" />
+              <path d="m106.39 50.612 21.591 87.496-86.567-24.945z" />
+              <path d="m84.91 125.03-10.724-43.465 43.008 12.346z" />
+              <path d="m63.458 38.153 10.724 43.465-43.008-12.346z" />
+              <path d="m149.47 62.93 10.724 43.465-43.008-12.346z" />
+              <path d="m84.915 125.06 10.724 43.465-43.008-12.346z" />
+            </g>
+          </svg>
         ),
         id: "three.js",
         label: "Three.js",

@@ -86,7 +86,7 @@ export const PROJECTS: Project[] = [
         released: "2025",
         technologies: ["react", "nextjs", "typescript","three.js", "tailwind", "graphql"],
         title: "3DConfig",
-        type: "web",
+        type: "app",
     },
     {
         description: "mi-band",
@@ -96,7 +96,7 @@ export const PROJECTS: Project[] = [
         released: "2025",
         technologies: ["html", "css", "sass", "javascript", "three.js", "Node.js/Express"],
         title: "Mi-band",
-        type: "web",
+        type: "app",
     },
     {
         description: "assembly3d",
@@ -116,7 +116,7 @@ export const PROJECTS: Project[] = [
         released: "",
         technologies: ["html", "css", "sass", "javascript"],
         title: "DAGO",
-        type: "web",
+        type: "app",
     },
     {
         description: "mjd",
