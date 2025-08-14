@@ -1,7 +1,12 @@
+"use client";
 import { useTranslations } from "next-intl";
 
 export default function Footer() {
     const t = useTranslations();
+    const handleSoon = (e) => {
+        e.preventDefault();
+        alert("Bude doplněno brzy");
+    };
 
     return (
         <footer className="flex h-[--footer-height] shrink-0 border-t border-primary">
@@ -14,10 +19,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
-                onClick={(e) => {
-                    e.preventDefault(); // Zabrání otevření odkazu
-                    alert("Bude doplněno brzy");
-                }}
+                onClick={handleSoon}
             >
                 <svg
                     fill="currentColor"
@@ -34,10 +36,8 @@ export default function Footer() {
                 href="https://www.facebook.com/"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="Facebook"    onClick={(e) => {
-                    e.preventDefault(); // Zabrání otevření odkazu
-                    alert("Bude doplněno brzy");
-                }}
+                title="Facebook"    
+                onClick={handleSoon}
             >
                 <svg
                     fill="currentColor"
