@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "kiwico",
-        id: 2,
+        id: 2.1,
         images: [kiwico],
         link: "https://www.kiwico.com/",
         released: "2025-08-01",
@@ -79,8 +79,8 @@ export const PROJECTS: Project[] = [
         type: "web",
     },
     {
-        description: "3dconfig",
-        id: 2,
+        description: "d3config",
+        id: 2.2,
         images: [d3config],
         link: "https://3dconfig.com/",
         released: "2025-08-01",
@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "mi-band",
-        id: 3,
+        id: 3.1,
         images: [miband1,miband2,miband3],
         link: "https://www.mi-band.cz/",
         released: "2025-08-01",
@@ -100,7 +100,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "assembly3d",
-        id: 3,
+        id: 3.2,
         images: [assembly3d],
         link: "https://www.assembly3D.cz/",
         released: "2025-08-01",
@@ -120,7 +120,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "mjd",
-        id: 2,
+        id: 4.1,
         images: [mjd1, mjd2, mjd3],
         link: "",
         released: "",
@@ -130,7 +130,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "atrea",
-        id: 3,
+        id: 4.2,
         images: [atrea1, atrea2, atrea3],
         link: "https://www.uxf.cz/reference/atrea",
         released: "2023-09-01",
@@ -140,7 +140,7 @@ export const PROJECTS: Project[] = [
     },
     {
         description: "photovoltaics",
-        id: 4,
+        id: 4.3,
         images: [scc1, scc2],
         link: "https://www.setricelecesko.cz/fotovoltaika",
         released: "2023-06-01",

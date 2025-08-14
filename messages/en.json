@@ -105,7 +105,8 @@
             "mi-band":"Description miband",
             "assembly3d":"Popis webu assembly 3d",
             "dago":"Popis webu assembly dago",
-            "kiwico":"Popis webu assembly kiwico"
+            "kiwico":"Popis webu assembly kiwico",
+            "d3config":"Popis webu assembly d3config"
         },
         "empty-projects": "No projects were found matching the selected filters."
     },
