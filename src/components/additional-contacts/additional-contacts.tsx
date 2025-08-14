@@ -8,7 +8,7 @@ export function AdditionalContacts() {
         <div className="flex flex-col gap-1.5 px-6 py-4 md:px-3.5 md:py-[18px]">
             <a
                 className="flex items-center gap-2 hover:text-white"
-                href="https://www.instagram.com/hovorkap/"
+                href="https://www.instagram.com/"
                 rel="noreferrer"
                 target="_blank"
             >
@@ -17,7 +17,7 @@ export function AdditionalContacts() {
             </a>
             <a
                 className="flex items-center gap-2 hover:text-white"
-                href="https://x.com/hovorkap"
+                href="https://x.com/"
                 rel="noreferrer"
                 target="_blank"
             >

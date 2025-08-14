@@ -27,11 +27,11 @@ export default function Home() {
                             &quot;
                             <a
                                 className="underline"
-                                href="https://github.com/phovorka"
+                                href="https://github.com/phovorka/portfolio"
                                 rel="noreferrer"
                                 target="_blank"
                             >
-                                https://github.com/phovorka
+                                https://github.com/phovorka/portfolio
                             </a>
                             &quot;
                         </span>

@@ -92,7 +92,7 @@ export const FILTER_TYPES: FilterType[] = [
                 />
             </svg>
         ),
-        id: "threejs",
+        id: "three.js",
         label: "Three.js",
     },
     {
