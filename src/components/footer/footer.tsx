@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 
 export default function Footer() {
     const t = useTranslations();
-    const handleSoon = (e) => {
+    const handleSoon =  (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         alert(t("HomePage.footer.fill-soon"));
     };
