@@ -3,7 +3,10 @@ import { useTranslations } from "next-intl";
 
 export function AdditionalContacts() {
     const t = useTranslations();
-
+    const handleSoon =  (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        alert(t("ContactPage.left-menu.additional-contacts.fill-soon"));
+    };
     return (
         <div className="flex flex-col gap-1.5 px-6 py-4 md:px-3.5 md:py-[18px]">
             <a
@@ -11,6 +14,7 @@ export function AdditionalContacts() {
                 href="https://www.instagram.com/"
                 rel="noreferrer"
                 target="_blank"
+                onClick={handleSoon}
             >
                 <RiInstagramFill size={16} />
                 {t("ContactPage.left-menu.additional-contacts.instagram")}
@@ -20,6 +24,7 @@ export function AdditionalContacts() {
                 href="https://x.com/"
                 rel="noreferrer"
                 target="_blank"
+                onClick={handleSoon}
             >
                 <RiTwitterXFill size={16} />
                 {t("ContactPage.left-menu.additional-contacts.twitter")}
