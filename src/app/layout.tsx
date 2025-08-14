@@ -6,7 +6,6 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
-import PlausibleProvider from "next-plausible";
 import Footer from "@/components/footer/footer";
 import { Header } from "@/components/header/header";
 import ogImageCs from "@/public/og_image_cs.png";
@@ -76,13 +75,7 @@ export default async function RootLayout(props: Props) {
 
             <html className={`${firaCode.variable}`} lang={locale}>
                 <head>
-                    <PlausibleProvider
-                        customDomain="https://analytics.lukis.dev"
-                        domain="lukis.dev"
-                        hash
-                        selfHosted
-                        trackOutboundLinks
-                    />
+
                 </head>
                 <NextIntlClientProvider messages={messages}>
                     <body className="h-dvh overflow-hidden p-4 md:p-16">
