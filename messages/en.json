@@ -20,7 +20,8 @@
             "contact": "_contact-me"
         },
         "footer": {
-            "find-me-in": "find me in"
+            "find-me-in": "find me in",
+            "fill-soon": "will be added soon"
         },
         "hero": {
             "title": "Petr Hovorka",

@@ -5,7 +5,7 @@ export default function Footer() {
     const t = useTranslations();
     const handleSoon = (e) => {
         e.preventDefault();
-        alert("Bude doplněno brzy");
+        alert(t("HomePage.footer.fill-soon"));
     };
 
     return (
