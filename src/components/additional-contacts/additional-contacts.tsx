@@ -12,9 +12,9 @@ export function AdditionalContacts() {
             <a
                 className="flex items-center gap-2 hover:text-white"
                 href="https://www.instagram.com/"
+                onClick={handleSoon}
                 rel="noreferrer"
                 target="_blank"
-                onClick={handleSoon}
             >
                 <RiInstagramFill size={16} />
                 {t("ContactPage.left-menu.additional-contacts.instagram")}
@@ -22,9 +22,9 @@ export function AdditionalContacts() {
             <a
                 className="flex items-center gap-2 hover:text-white"
                 href="https://x.com/"
+                onClick={handleSoon}
                 rel="noreferrer"
                 target="_blank"
-                onClick={handleSoon}
             >
                 <RiTwitterXFill size={16} />
                 {t("ContactPage.left-menu.additional-contacts.twitter")}
