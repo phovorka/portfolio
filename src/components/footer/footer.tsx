@@ -10,10 +10,14 @@ export default function Footer() {
             </div>
             <a
                 className="flex items-center border-r border-primary px-3.5 hover:bg-dark-slate-blue"
-                href="https://www.linkedin.com/in/petr-hovorka/"
+                href="https://www.linkedin.com/"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
+                onClick={(e) => {
+                    e.preventDefault(); // Zabrání otevření odkazu
+                    alert("Bude doplněno brzy");
+                }}
             >
                 <svg
                     fill="currentColor"
@@ -27,10 +31,13 @@ export default function Footer() {
             </a>
             <a
                 className="flex items-center border-r border-primary px-3.5 hover:bg-dark-slate-blue"
-                href="https://www.facebook.com/petrhovorka/"
+                href="https://www.facebook.com/"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="Facebook"
+                title="Facebook"    onClick={(e) => {
+                    e.preventDefault(); // Zabrání otevření odkazu
+                    alert("Bude doplněno brzy");
+                }}
             >
                 <svg
                     fill="currentColor"
@@ -44,7 +51,7 @@ export default function Footer() {
             </a>
             <a
                 className="flex items-center gap-1 border-primary px-3.5 hover:bg-dark-slate-blue md:ml-auto md:border-l md:px-6"
-                href="https://github.com/phovorka"
+                href="https://github.com/phovorka/portfolio"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="GitHub"
