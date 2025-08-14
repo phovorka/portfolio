@@ -102,11 +102,11 @@
             "travel-tour": "Travel Tour travel agency website. Built on the CeSYS system.",
             "artemis-tour": "Artemis Tour travel agency website. Built on the CeSYS system.",
             "portfolio": "My current web portfolio, which you are currently viewing.",
-            "mi-band":"Description miband",
-            "assembly3d":"Popis webu assembly 3d",
-            "dago":"Popis webu assembly dago",
-            "kiwico":"Popis webu assembly kiwico",
-            "d3config":"Popis webu assembly d3config"
+            "mi-band": "3D configurator for printing smartwatch straps",
+            "assembly3d": "Web application for creating 3D assembly instructions",
+            "dago": "Internal CMS system",
+            "kiwico": "Website of a STEM toys manufacturer",
+            "d3config": "Web application for creating a 3D configurator"
         },
         "empty-projects": "No projects were found matching the selected filters."
     },

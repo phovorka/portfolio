@@ -102,11 +102,11 @@
             "travel-tour": "Web cestovní agentury Travel Tour. Postavený na systému CeSYS.",
             "artemis-tour": "Web cestovní agentury Artemis Tour. Postavený na systému CeSYS.",
             "portfolio": "Moje aktuální webové portfolio, které si právě prohlížíte.",
-            "mi-band":"Popis webu miband",
-            "assembly3d":"Popis webu assembly 3d",
-            "dago":"Popis webu assembly dago",
-            "kiwico":"Popis webu assembly kiwico",
-            "d3config":"Popis webu assembly d3config"
+            "mi-band":"3D konfigurátor potisku řemínků chytrých hodinek",
+            "assembly3d":"Webová aplikace pro vytváření 3D montážních návodů",
+            "dago":"Interní CMS systém",
+            "kiwico":"Web of STEM toys manufacturer",
+            "d3config":"Webová aplikace pro vytváření 3D konfigurátoru"
         },
         "empty-projects": "Nebyly nalezeny žádné projekty odpovídající vybraným filtrům."
     },
