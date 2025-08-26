@@ -86,3 +86,4 @@ const rowHeading: CSSProperties = {
 const rowText: CSSProperties = {
     color: "#607b96",
 };
+
