@@ -90,6 +90,21 @@ export function usePageMenu(): MenuItems {
                     items: [
                         {
                             folder: "work",
+                            href: "/about/professional-info/kiwico",
+                            label: "kiwico", // Or whatever label you want to display
+                        },
+                        {
+                            folder: "work",
+                            href: "/about/professional-info/dago",
+                            label: "dago", // Or whatever label you want to display
+                        },
+                        {
+                            folder: "work",
+                            href: "/about/professional-info/d3config",
+                            label: "d3config", // Or whatever label you want to display
+                        },
+                        {
+                            folder: "work",
                             href: "/about/professional-info/cesys",
                             label: "cesys",
                         },
@@ -103,6 +118,7 @@ export function usePageMenu(): MenuItems {
                             href: "/about/professional-info/uxf",
                             label: "uxf",
                         },
+
                     ],
                     label: t("AboutPage.left-menu.professional-info.title"),
                 },

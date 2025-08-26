@@ -5,12 +5,15 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
     return [
+        { slug: "kiwico" },
         { slug: "cesys" },
         { slug: "high-school" },
         { slug: "make" },
         { slug: "me" },
         { slug: "university" },
         { slug: "uxf" },
+        { slug: "dago" },
+        { slug: "d3config" },
     ];
 }
 
