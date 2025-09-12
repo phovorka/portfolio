@@ -27,7 +27,7 @@ export async function sendEmail(formData: ContactFormData) {
 
         await transporter.sendMail({
             from: formData.email,
-            to: process.env.CONTACT_EMAIL,
+            replyTo: process.env.CONTACT_EMAIL,
             subject: "Nová poptávka z webu",
             html: emailHtml,
         });
