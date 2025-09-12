@@ -2,7 +2,7 @@ import { render } from "@react-email/components";
 import nodemailer from "nodemailer";
 import { ContactFormData } from "@/components/contact-form/contact-form";
 import InquiryEmail from "../../emails/inquiry";
-//new changed to sandbox mail
+//new env 2
 const transporter = nodemailer.createTransport({
     host: "smtp.mailersend.net",
     port: 587,
@@ -23,20 +23,14 @@ export async function sendEmail(formData: ContactFormData) {
     );
 
     try {
- // Verify SMTP connection before sending
- await transporter.verify();
- console.log("SMTP connection verified");
+        await transporter.verify();
 
- // Send the email
- await transporter.sendMail({
-     from: process.env.CONTACT_EMAIL, // verified MailerSend sender
-     replyTo: formData.email,         // user email
-     subject: "Nová poptávka z webu",
-     html: emailHtml,
- });
-
- console.log("Email sent successfully");
- return { success: true };
+        await transporter.sendMail({
+            from: process.env.CONTACT_EMAIL, // must match verified sender
+            replyTo: formData.email,        // user’s email
+            subject: "Nová poptávka z webu",
+            html: emailHtml,
+        });
     } catch (error) {
         // eslint-disable-next-line no-console
         console.error("Email sending failed", error);
