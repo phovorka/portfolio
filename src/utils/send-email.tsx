@@ -4,7 +4,6 @@ import { ContactFormData } from "@/components/contact-form/contact-form";
 import InquiryEmail from "../../emails/inquiry";
 
 const transporter = nodemailer.createTransport({
-    service: "PetrH",
     host: "smtp.mailersend.net",
     port: 587,
     secure: false, // true for 465, false for other ports
