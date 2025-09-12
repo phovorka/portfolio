@@ -26,8 +26,8 @@ export async function sendEmail(formData: ContactFormData) {
         await transporter.verify();
 
         await transporter.sendMail({
-            from: formData.email,
-            replyTo: process.env.CONTACT_EMAIL,
+            from: process.env.CONTACT_EMAIL, // must match verified sender
+            replyTo: formData.email,        // user’s email
             subject: "Nová poptávka z webu",
             html: emailHtml,
         });
