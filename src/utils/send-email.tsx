@@ -2,7 +2,7 @@ import { render } from "@react-email/components";
 import nodemailer from "nodemailer";
 import { ContactFormData } from "@/components/contact-form/contact-form";
 import InquiryEmail from "../../emails/inquiry";
-
+//new env
 const transporter = nodemailer.createTransport({
     host: "smtp.mailersend.net",
     port: 587,
