@@ -1,3 +1,4 @@
+//utils/send-email.tsx
 import { render } from "@react-email/components";
 import nodemailer from "nodemailer";
 import { ContactFormData } from "@/components/contact-form/contact-form";
@@ -26,8 +27,8 @@ export async function sendEmail(formData: ContactFormData) {
         await transporter.verify();
 
         await transporter.sendMail({
-            from: process.env.CONTACT_EMAIL, // must match verified sender
-            replyTo: formData.email,        // user’s email
+            from: process.env.CONTACT_EMAIL, // must be verified in Brevo
+            to: process.env.CONTACT_EMAIL,   // where you want to receive it
             subject: "Nová poptávka z webu",
             html: emailHtml,
         });
