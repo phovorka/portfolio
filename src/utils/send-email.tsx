@@ -3,7 +3,7 @@ import { render } from "@react-email/components";
 import nodemailer from "nodemailer";
 import { ContactFormData } from "@/components/contact-form/contact-form";
 import InquiryEmail from "../../emails/inquiry";
-//new env 2
+
 const transporter = nodemailer.createTransport({
     host: "smtp-relay.brevo.com",
     port: 587,
@@ -34,7 +34,7 @@ export async function sendEmail(formData: ContactFormData) {
         });
     } catch (error) {
         // eslint-disable-next-line no-console
-        console.error("Email sending failed", error);
-        throw new Error("Email sending failed");
+        console.error("Email sending failed with error:", JSON.stringify(error, null, 2));
+        throw new Error(`Email sending failed: ${error}`);
     }
 }
