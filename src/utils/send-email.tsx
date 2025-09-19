@@ -4,7 +4,7 @@ import { ContactFormData } from "@/components/contact-form/contact-form";
 import InquiryEmail from "../../emails/inquiry";
 //new env 2
 const transporter = nodemailer.createTransport({
-    host: "smtp.mailersend.net",
+    host: "smtp-relay.brevo.com",
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
